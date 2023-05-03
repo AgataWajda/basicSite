@@ -1,14 +1,47 @@
+body {
+  font-family: Roboto, Raleway, sans-serif;
+}
 
-
-
-.navigation .navigation-item {
+.navigation .navigation-item,
+.header-contacts .header-contacts-item {
   display: inline;
 }
 
+.header-link,
 .header-contacts .header-contacts-item {
-    display: inline ;
-    text-decoration: none;
+  text-decoration: none;
 }
-.header-link  {
-    text-decoration: none;
+
+.navigation-and-contacts .navigation-and-contacts-item {
+  display: inline-block;
+}
+.logo {
+  font-weight: 700;
+  font-size: 26px;
+  color: #000;
+}
+
+.logo-first-item {
+  color: #2196f3;
+}
+.navigation-item-link {
+  font-weight: 500;
+  font-size: 14px;
+  color: #212121;
+}
+
+.header-link-phone ,
+.header-link-mail {
+  font-weight: 500;
+  font-size: 14px;
+  color: #757575 ;
+}
+
+.header-link-phone:hover ,
+.header-link-phone:focus ,
+.header-link-mail:hover ,
+.header-link-mail:focus ,
+.navigation-item-link:hover , 
+.navigation-item-link:focus {
+  color: #2196F3
 }
