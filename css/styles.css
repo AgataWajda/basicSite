@@ -45,3 +45,55 @@ body {
 .navigation-item-link:focus {
   color: #2196F3
 }
+
+.page-title {
+  font-weight: 900 ;
+  font-size: 44px ;
+  color: #fff ;
+  background-color: #2F303A;
+  text-align: center;
+}
+.button {
+  font-weight: 700 ;
+  font-size: 16px ;
+  color: #fff ;
+  background-color: #2196F3 ;
+}
+
+.page-description-title {
+  font-weight: 700 ;
+  font-size: 14px ;
+  color: #212121 ;
+}
+
+.page-description {
+  font-weight: 400 ;
+  font-size: 14px ;
+  color: #757575 ;
+}
+
+.subtitle {
+  font-size: 36px ;
+  font-weight: 700 ;
+  color: #212121 ;
+  text-align: center;
+}
+
+.company-offer .company-offer-item {
+  display: inline
+}
+
+.team-members .team-member {
+  display: inline-block ;
+}
+
+.team-member-name {
+  font-weight: 500;
+  font-size: 16px ;
+  color: #212121 ;
+}
+.team-member-job {
+  font-weight: 400 ; 
+  font-size: 16 px ;
+  color: #757575 ;
+}
