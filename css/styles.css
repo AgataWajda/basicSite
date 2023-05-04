@@ -15,13 +15,25 @@ body {
 .navigation-and-contacts .navigation-and-contacts-item {
   display: inline-block;
 }
-.logo {
+.header-logo ,
+.footer-logo {
   font-weight: 700;
   font-size: 26px;
+  font-family: Raleway , sans-serif ;
+}
+
+.header-logo {
   color: #000;
 }
 
-.logo-first-item {
+.footer-logo {
+  color:#fff ;
+  background-color: #2F303A;
+  text-decoration: none ;
+}
+
+.header-logo > .logo-first-item ,
+.footer-logo > .logo-first-item  {
   color: #2196f3;
 }
 .navigation-item-link {
@@ -44,6 +56,25 @@ body {
 .navigation-item-link:hover , 
 .navigation-item-link:focus {
   color: #2196F3
+}
+
+.adress {
+  font-weight: 400 ;
+  font-size: 14 px ;
+  color:#fff ;
+  background-color: #2F303A;
+
+}
+.contact {
+  font-weight: 400;
+  font-size: 14px;
+  color: #FFFFFF99 ;
+  background-color: #2F303A;
+  text-decoration: none;
+}
+
+.footer-contacts {
+list-style: none ;
 }
 
 .page-title {
