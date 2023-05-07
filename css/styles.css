@@ -1,9 +1,12 @@
 body {
   font-family: Roboto, Raleway, sans-serif;
+  color: #212121
 }
 
 .navigation .navigation-item,
-.header-contacts .header-contacts-item {
+.header-contacts .header-contacts-item,
+.portfolio-buttons-list .portfolio-buttons-item
+{
   display: inline;
 }
 
@@ -12,7 +15,9 @@ body {
   text-decoration: none;
 }
 
-.navigation-and-contacts .navigation-and-contacts-item {
+.navigation-and-contacts .navigation-and-contacts-item ,
+.products .product
+ {
   display: inline-block;
 }
 .header-logo ,
@@ -39,7 +44,7 @@ body {
 .navigation-item-link {
   font-weight: 500;
   font-size: 14px;
-  color: #212121;
+  color:#212121 ;
 }
 
 .header-link-phone ,
@@ -63,6 +68,7 @@ body {
   font-size: 14 px ;
   color:#fff ;
   background-color: #2F303A;
+  line-height: 1.46 ;
 
 }
 .contact {
@@ -71,6 +77,7 @@ body {
   color: #FFFFFF99 ;
   background-color: #2F303A;
   text-decoration: none;
+  line-height: 1.46 ;
 }
 
 .footer-contacts {
@@ -83,30 +90,33 @@ list-style: none ;
   color: #fff ;
   background-color: #2F303A;
   text-align: center;
+  line-height: 1.16 ;
 }
 .button {
   font-weight: 700 ;
   font-size: 16px ;
   color: #fff ;
   background-color: #2196F3 ;
+  line-height: 1.6 ;
+  cursor: pointer;
 }
 
 .page-description-title {
   font-weight: 700 ;
   font-size: 14px ;
-  color: #212121 ;
+  
 }
 
 .page-description {
   font-weight: 400 ;
   font-size: 14px ;
   color: #757575 ;
+  line-height: 1.46 ;
 }
 
 .subtitle {
   font-size: 36px ;
   font-weight: 700 ;
-  color: #212121 ;
   text-align: center;
 }
 
@@ -121,10 +131,33 @@ list-style: none ;
 .team-member-name {
   font-weight: 500;
   font-size: 16px ;
-  color: #212121 ;
+  
 }
 .team-member-job {
   font-weight: 400 ; 
   font-size: 16 px ;
   color: #757575 ;
+}
+
+.portfolio-button {
+font-weight: 500 ;
+font-size: 16px ;
+line-height: 1.39 ;
+background-color: #F5F4FA ;
+cursor: pointer;
+}
+.portfolio-button:hover , 
+.portfolio-button:focus {
+  color: #FFFFFF ;
+  background-color: #2196F3 ;
+}
+
+.company-name {
+  font-size: 18px ;
+  line-height: 1.71 ;
+}
+.job-type {
+  color: #757575;
+  line-height: 1.6 ;
+ ;
 }
