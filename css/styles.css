@@ -1,12 +1,11 @@
 body {
   font-family: Roboto, Raleway, sans-serif;
-  color: #212121
+  color: #212121;
 }
 
 .navigation .navigation-item,
 .header-contacts .header-contacts-item,
-.portfolio-buttons-list .portfolio-buttons-item
-{
+.portfolio-buttons-list .portfolio-buttons-item {
   display: inline;
 }
 
@@ -15,16 +14,15 @@ body {
   text-decoration: none;
 }
 
-.navigation-and-contacts .navigation-and-contacts-item ,
-.products .product
- {
+.navigation-and-contacts .navigation-and-contacts-item,
+.products .product {
   display: inline-block;
 }
-.header-logo ,
+.header-logo,
 .footer-logo {
   font-weight: 700;
   font-size: 26px;
-  font-family: Raleway , sans-serif ;
+  font-family: Raleway, sans-serif;
 }
 
 .header-logo {
@@ -32,132 +30,138 @@ body {
 }
 
 .footer-logo {
-  color:#fff ;
-  background-color: #2F303A;
-  text-decoration: none ;
+  color: #fff;
+  text-decoration: none;
 }
 
-.header-logo > .logo-first-item ,
-.footer-logo > .logo-first-item  {
+.header-logo > .logo-first-item,
+.footer-logo > .logo-first-item {
   color: #2196f3;
 }
 .navigation-item-link {
   font-weight: 500;
   font-size: 14px;
-  color:#212121 ;
+  color: #212121;
 }
 
-.header-link-phone ,
+.header-link-phone,
 .header-link-mail {
   font-weight: 500;
   font-size: 14px;
-  color: #757575 ;
+  color: #757575;
 }
 
-.header-link-phone:hover ,
-.header-link-phone:focus ,
-.header-link-mail:hover ,
-.header-link-mail:focus ,
-.navigation-item-link:hover , 
-.navigation-item-link:focus {
-  color: #2196F3
+.header-link-phone:hover,
+.header-link-phone:focus,
+.header-link-mail:hover,
+.header-link-mail:focus,
+.navigation-item-link:hover,
+.navigation-item-link:focus,
+.contact:hover,
+.contact:focus {
+  color: #2196f3;
 }
 
 .adress {
-  font-weight: 400 ;
+  font-weight: 400;
   font-size: 14px;
-  color:#fff ;
-  background-color: #2F303A;
-  line-height: 1.46 ;
-
+  color: #fff;
+  line-height: 1.46;
 }
 .contact {
   font-weight: 400;
   font-size: 14px;
-  color: #FFFFFF99 ;
-  background-color: #2F303A;
+  color: #ffffff99;
   text-decoration: none;
-  line-height: 1.46 ;
+  line-height: 1.46;
 }
 
 .footer-contacts {
-list-style: none ;
+  list-style: none;
 }
 
 .page-title {
-  font-weight: 900 ;
-  font-size: 44px ;
-  color: #fff ;
-  background-color: #2F303A;
+  font-weight: 900;
+  font-size: 44px;
+  color: #fff;
+
+  line-height: 1.16;
+}
+
+.main-section-box {
+  background-color: #2f303a;
   text-align: center;
-  line-height: 1.16 ;
+}
+
+.footer-box {
+  background-color: #2f303a;
 }
 .button {
-  font-weight: 700 ;
-  font-size: 16px ;
-  color: #fff ;
-  background-color: #2196F3 ;
-  line-height: 1.6 ;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  background-color: #2196f3;
+  line-height: 1.6;
   cursor: pointer;
 }
 
 .page-description-title {
-  font-weight: 700 ;
-  font-size: 14px ;
-  
+  font-weight: 700;
+  font-size: 14px;
 }
 
 .page-description {
-  font-weight: 400 ;
-  font-size: 14px ;
-  color: #757575 ;
-  line-height: 1.46 ;
+  font-weight: 400;
+  font-size: 14px;
+  color: #757575;
+  line-height: 1.46;
 }
 
 .subtitle {
-  font-size: 36px ;
-  font-weight: 700 ;
+  font-size: 36px;
+  font-weight: 700;
   text-align: center;
 }
 
 .company-offer .company-offer-item {
-  display: inline
+  display: inline;
 }
 
 .team-members .team-member {
-  display: inline-block ;
+  display: inline-block;
 }
 
 .team-member-name {
   font-weight: 500;
-  font-size: 16px ;
-  
+  font-size: 16px;
 }
 .team-member-job {
-  font-weight: 400 ; 
+  font-weight: 400;
   font-size: 16px;
-  color: #757575 ;
+  color: #757575;
 }
 
 .portfolio-button {
-font-weight: 500 ;
-font-size: 16px ;
-line-height: 1.39 ;
-background-color: #F5F4FA ;
-cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.39;
+  background-color: #f5f4fa;
+  cursor: pointer;
 }
-.portfolio-button:hover , 
+.portfolio-button:hover,
 .portfolio-button:focus {
-  color: #FFFFFF ;
-  background-color: #2196F3 ;
+  color: #ffffff;
+  background-color: #2196f3;
 }
 
+.portfolio-filters {
+  text-align: center;
+}
 .company-name {
-  font-size: 18px ;
-  line-height: 1.71 ;
+  font-size: 18px;
+  line-height: 1.71;
 }
 .job-type {
   color: #757575;
-  line-height: 1.6 ;
- 
+  line-height: 1.6;
 }
