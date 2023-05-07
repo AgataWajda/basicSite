@@ -65,7 +65,7 @@ body {
 
 .adress {
   font-weight: 400 ;
-  font-size: 14 px ;
+  font-size: 14px;
   color:#fff ;
   background-color: #2F303A;
   line-height: 1.46 ;
@@ -135,7 +135,7 @@ list-style: none ;
 }
 .team-member-job {
   font-weight: 400 ; 
-  font-size: 16 px ;
+  font-size: 16px;
   color: #757575 ;
 }
 
@@ -159,5 +159,5 @@ cursor: pointer;
 .job-type {
   color: #757575;
   line-height: 1.6 ;
- ;
+ 
 }
