@@ -3,27 +3,66 @@ body {
   color: #212121;
 }
 
-.navigation .navigation-item,
-.header-contacts .header-contacts-item,
-.portfolio-buttons-list .portfolio-buttons-item {
-  display: inline;
+.conteiner {
+  width: 1200px;
 }
 
+
+
+.navigation-and-contacts {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding-left: 0px;
+  margin-top: 24px ;
+  margin-bottom: 25px ;
+}
+
+.navigation-list {
+  display: flex ;
+  list-style: none;
+  margin-left: 96px ;
+  padding-left: 0px ;
+  width: 254px ;
+  justify-content: space-between;
+
+}
+
+.navigation-and-logo {
+  display: flex ;
+  list-style: none ;
+  padding-left: 0px;
+  align-items: center ;
+}
+.navigation-item {
+  margin-left: 0px ;
+   
+}
+
+
+
 .header-link,
-.header-contacts .header-contacts-item {
+.header-contacts-item {
   text-decoration: none;
 }
 
-.navigation-and-contacts .navigation-and-contacts-item,
-.products .product {
-  display: inline-block;
+.header-contacts-list {
+  display: flex;
+  list-style: none ;
+  justify-content: space-between;
+  padding-left: 0px ;
+  
 }
-.header-logo,
-.footer-logo {
-  font-weight: 700;
-  font-size: 26px;
-  font-family: Raleway, sans-serif;
+
+.navigation-and-contacts-item{
+  display: flex ;
+  align-items: center ;
 }
+
+.header-contacts-item {
+  padding-left: 50px;
+}
+
 
 .header-logo {
   color: #000;
@@ -32,6 +71,7 @@ body {
 .footer-logo {
   color: #fff;
   text-decoration: none;
+  font-style: normal;
 }
 
 .header-logo > .logo-first-item,
@@ -67,6 +107,7 @@ body {
   font-size: 14px;
   color: #fff;
   line-height: 1.46;
+  font-style: normal;
 }
 .contact {
   font-weight: 400;
@@ -78,6 +119,14 @@ body {
 
 .footer-contacts {
   list-style: none;
+  font-style: normal;
+}
+
+.header-logo,
+.footer-logo {
+  font-weight: 700;
+  font-size: 26px;
+  font-family: Raleway, sans-serif;
 }
 
 .page-title {

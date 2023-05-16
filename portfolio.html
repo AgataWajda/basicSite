@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+
+    <link
+      href="https://github.com/sindresorhus/modern-normalize.git"
+      rel="stylesheet"
+    />
     <link href="css/styles.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -13,223 +18,248 @@
   </head>
   <body>
     <header>
-      <ul class="navigation-and-contacts">
-        <li class="navigation-and-contacts-item">
-          <nav class="navigation">
-            <ul>
-              <li class="navigation-item">
-                <a href="/webstudio" class="header-link header-logo"
-                  ><span class="logo-first-item">Web</span>Studio</a
-                >
+      <div class="conteiner">
+        <ul class="navigation-and-contacts">
+          <li class="navigation-and-contacts-item">
+            <nav class="navigation">
+              <ul class="navigation-and-logo">
+                <li class="logo">
+                  <a href="/webstudio" class="header-link header-logo"
+                    ><span class="logo-first-item">Web</span>Studio</a
+                  >
+                </li>
+
+                <li class="navigation-items">
+                  <ul class="navigation-list">
+                    <li>
+                      <a
+                        href="index.html"
+                        class="header-link navigation-item-link"
+                        >Agencja</a
+                      >
+                    </li>
+                    <li class="navigation-item">
+                      <a
+                        href="portfolio.html"
+                        class="header-link navigation-item-link"
+                        >Portfolio</a
+                      >
+                    </li>
+                    <li class="navigation-item">
+                      <a
+                        href="/contact"
+                        class="header-link navigation-item-link"
+                        >Kontakt</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </li>
+          <li class="navigation-and-contacts-item">
+            <aside>
+              <ul class="header-contacts-list">
+                <li class="header-contacts-item">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="header-link header-link-mail"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="header-contacts-item">
+                  <a
+                    href="tel:+48111111111"
+                    class="header-link header-link-phone"
+                    >+48 111 111 111</a
+                  >
+                </li>
+              </ul>
+            </aside>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="conteiner">
+        <figure>
+          <nav class="portfolio-filters">
+            <ul class="portfolio-buttons-list">
+              <li class="portfolio-buttons-item">
+                <button type="button" class="portfolio-button">
+                  Wszystkie
+                </button>
               </li>
-              <li class="navigation-item">
-                <a href="index.html" class="header-link navigation-item-link"
-                  >Agencja</a
-                >
+              <li class="portfolio-buttons-item">
+                <button type="button" class="portfolio-button">Strony</button>
               </li>
-              <li class="navigation-item">
-                <a
-                  href="portfolio.html"
-                  class="header-link navigation-item-link"
-                  >Portfolio</a
-                >
+              <li class="portfolio-buttons-item">
+                <button type="button" class="portfolio-button">
+                  Aplikacje
+                </button>
               </li>
-              <li class="navigation-item">
-                <a href="/contact" class="header-link navigation-item-link"
-                  >Kontakt</a
-                >
+              <li class="portfolio-buttons-item">
+                <button type="button" class="portfolio-button">Dizajn</button>
+              </li>
+              <li class="portfolio-buttons-item">
+                <button type="button" class="portfolio-button">
+                  Marketing
+                </button>
+              </li>
+            </ul>
+            <ul class="products">
+              <li class="product">
+                <figure>
+                  <img
+                    src="images/technocrack.jpg"
+                    alt="Laptop otwarty na stronie internetowej ze zdjęciami ludzi i opisami."
+                    width="370"
+                    height="294"
+                  />
+                  <figcaption>
+                    <h3 class="company-name">Technocrack</h3>
+                    <p class="job-type">Strona internetowa</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="product">
+                <figure>
+                  <img
+                    src="images/grafika-new-orlean-vs-golden-star.jpg"
+                    alt="Grafika grających dwóch koszykarzy i piłki."
+                    width="370"
+                    height="294"
+                  />
+                  <figcaption>
+                    <h3 class="Grafika New Orlean vs Golden Star">
+                      Technocrack
+                    </h3>
+                    <p class="job-type">Dizajn</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="product">
+                <figure>
+                  <img
+                    src="images/restauracja-seafood.jpg"
+                    alt="Logo restauracji Seafood z jej nazwą igraficzną rybą w tle."
+                    width="370"
+                    height="294"
+                  />
+                  <figcaption>
+                    <h3 class="company-name">Restauracja Seafood</h3>
+                    <p class="job-type">Aplikacja</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="product">
+                <figure>
+                  <img
+                    src="images/projekt-prime.jpg"
+                    alt="Zdjęcie czarnych słuchawek nausznych."
+                    width="370"
+                    height="294"
+                  />
+                  <figcaption>
+                    <h3 class="company-name">Projekt Prime</h3>
+                    <p class="job-type">Marketing</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="product">
+                <figure>
+                  <img
+                    src="images/projekt-boxes.jpg"
+                    alt="Dwa pudełka: jedno większe i białe, drugie mniejsze, brązowe."
+                    width="370"
+                    height="294"
+                  />
+                  <figcaption>
+                    <h3 class="company-name">Projekt Boxes</h3>
+                    <p class="job-type">Aplikacja</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="product">
+                <figure>
+                  <img
+                    src="images/inspiration-has-no-borders.jpg"
+                    alt="Monitor otwarty na stronie internetowej z mapą świata i napisami."
+                    width="370"
+                    height="294"
+                  />
+                  <figcaption>
+                    <h3 class="company-name">Inspiration has no Borders</h3>
+                    <p class="job-type">Strona internetowa</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="product">
+                <figure>
+                  <img
+                    src="images/magazyn-limited-edition.jpg"
+                    alt="Magazyn otwarty na przykładowej stronie ze zdjęciami i artykułem."
+                    width="370"
+                    height="294"
+                  />
+                  <figcaption>
+                    <h3 class="company-name">Magazyn Limited Edition</h3>
+                    <p class="job-type">Dizajn</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="product">
+                <figure>
+                  <img
+                    src="images/projekt-lab-marketing.jpg"
+                    alt="Biała metka z sznurkiem i hasłem reklamowym firmy."
+                    width="370"
+                    height="294"
+                  />
+                  <figcaption>
+                    <h3 class="company-name">Projekt LAB</h3>
+                    <p class="job-type">Marketing</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="product">
+                <figure>
+                  <img
+                    src="images/growing-business.jpg"
+                    alt="Laptop w biurze podczasu używania. Przeglądarka otwarta na stronie firmy."
+                    width="370"
+                    height="294"
+                  />
+                  <figcaption>
+                    <h3 class="company-name">Growing Business</h3>
+                    <p class="job-type">Aplikacja</p>
+                  </figcaption>
+                </figure>
               </li>
             </ul>
           </nav>
-        </li>
-        <li class="navigation-and-contacts-item">
-          <aside class="header-contacts">
-            <ul>
-              <li class="header-contacts-item">
-                <a
-                  href="mailto:info@devstudio.com"
-                  class="header-link header-link-mail"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li class="header-contacts-item">
-                <a href="tel:+48111111111" class="header-link header-link-phone"
-                  >+48 111 111 111</a
-                >
-              </li>
-            </ul>
-          </aside>
-        </li>
-      </ul>
-    </header>
-    <main>
-      <figure>
-        <nav class="portfolio-filters">
-          <ul class="portfolio-buttons-list">
-            <li class="portfolio-buttons-item">
-              <button type="button" class="portfolio-button">Wszystkie</button>
-            </li>
-            <li class="portfolio-buttons-item">
-              <button type="button" class="portfolio-button">Strony</button>
-            </li>
-            <li class="portfolio-buttons-item">
-              <button type="button" class="portfolio-button">Aplikacje</button>
-            </li>
-            <li class="portfolio-buttons-item">
-              <button type="button" class="portfolio-button">Dizajn</button>
-            </li>
-            <li class="portfolio-buttons-item">
-              <button type="button" class="portfolio-button">Marketing</button>
-            </li>
-          </ul>
-          <ul class="products">
-            <li class="product">
-              <figure>
-                <img
-                  src="images/technocrack.jpg"
-                  alt="Laptop otwarty na stronie internetowej ze zdjęciami ludzi i opisami."
-                  width="370"
-                  height="294"
-                />
-                <figcaption>
-                  <h3 class="company-name">Technocrack</h3>
-                  <p class="job-type">Strona internetowa</p>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="product">
-              <figure>
-                <img
-                  src="images/grafika-new-orlean-vs-golden-star.jpg"
-                  alt="Grafika grających dwóch koszykarzy i piłki."
-                  width="370"
-                  height="294"
-                />
-                <figcaption>
-                  <h3 class="Grafika New Orlean vs Golden Star">Technocrack</h3>
-                  <p class="job-type">Dizajn</p>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="product">
-              <figure>
-                <img
-                  src="images/restauracja-seafood.jpg"
-                  alt="Logo restauracji Seafood z jej nazwą igraficzną rybą w tle."
-                  width="370"
-                  height="294"
-                />
-                <figcaption>
-                  <h3 class="company-name">Restauracja Seafood</h3>
-                  <p class="job-type">Aplikacja</p>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="product">
-              <figure>
-                <img
-                  src="images/projekt-prime.jpg"
-                  alt="Zdjęcie czarnych słuchawek nausznych."
-                  width="370"
-                  height="294"
-                />
-                <figcaption>
-                  <h3 class="company-name">Projekt Prime</h3>
-                  <p class="job-type">Marketing</p>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="product">
-              <figure>
-                <img
-                  src="images/projekt-boxes.jpg"
-                  alt="Dwa pudełka: jedno większe i białe, drugie mniejsze, brązowe."
-                  width="370"
-                  height="294"
-                />
-                <figcaption>
-                  <h3 class="company-name">Projekt Boxes</h3>
-                  <p class="job-type">Aplikacja</p>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="product">
-              <figure>
-                <img
-                  src="images/inspiration-has-no-borders.jpg"
-                  alt="Monitor otwarty na stronie internetowej z mapą świata i napisami."
-                  width="370"
-                  height="294"
-                />
-                <figcaption>
-                  <h3 class="company-name">Inspiration has no Borders</h3>
-                  <p class="job-type">Strona internetowa</p>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="product">
-              <figure>
-                <img
-                  src="images/magazyn-limited-edition.jpg"
-                  alt="Magazyn otwarty na przykładowej stronie ze zdjęciami i artykułem."
-                  width="370"
-                  height="294"
-                />
-                <figcaption>
-                  <h3 class="company-name">Magazyn Limited Edition</h3>
-                  <p class="job-type">Dizajn</p>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="product">
-              <figure>
-                <img
-                  src="images/projekt-lab-marketing.jpg"
-                  alt="Biała metka z sznurkiem i hasłem reklamowym firmy."
-                  width="370"
-                  height="294"
-                />
-                <figcaption>
-                  <h3 class="company-name">Projekt LAB</h3>
-                  <p class="job-type">Marketing</p>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="product">
-              <figure>
-                <img
-                  src="images/growing-business.jpg"
-                  alt="Laptop w biurze podczasu używania. Przeglądarka otwarta na stronie firmy."
-                  width="370"
-                  height="294"
-                />
-                <figcaption>
-                  <h3 class="company-name">Growing Business</h3>
-                  <p class="job-type">Aplikacja</p>
-                </figcaption>
-              </figure>
-            </li>
-          </ul>
-        </nav>
-      </figure>
+        </figure>
+      </div>
     </main>
     <footer class="footer-box">
-      <address>
-        <a href="/webstudio" class="footer-logo"
-          ><span class="logo-first-item">Web</span>Studio</a
-        >
-        <ul class="footer-contacts">
-          <li class="adress">m. Warszawa, Aleje Jerozolimskie 21</li>
-          <li>
-            <a href="mailto:info@devstudio.com" class="contact"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a href="tel:+48111111111" class="contact">+48 111 111 111</a>
-          </li>
-        </ul>
-      </address>
+      <div class="conteiner">
+        <address>
+          <a href="/webstudio" class="footer-logo"
+            ><span class="logo-first-item">Web</span>Studio</a
+          >
+          <ul class="footer-contacts">
+            <li class="adress">m. Warszawa, Aleje Jerozolimskie 21</li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="contact"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+48111111111" class="contact">+48 111 111 111</a>
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
