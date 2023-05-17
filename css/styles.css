@@ -4,7 +4,7 @@ body {
 }
 
 .conteiner {
-  margin: 0, auto ;
+  margin:  auto ;
   width: 1200px;
 }
 
@@ -17,16 +17,16 @@ body {
   padding-left: 0px;
   margin-top: 24px ;
   margin-bottom: 25px ;
+  gap: 371px ;
 }
 
 .navigation-list {
   display: flex ;
   list-style: none;
-  margin-left: 96px ;
   padding-left: 0px ;
   width: 254px ;
   justify-content: space-between;
-
+  gap: 40px ;
 }
 
 .navigation-and-logo {
@@ -34,10 +34,10 @@ body {
   list-style: none ;
   padding-left: 0px;
   align-items: center ;
+  gap: 96px ;
 }
 .navigation-item {
   margin-left: 0px ;
-   
 }
 
 
@@ -52,17 +52,9 @@ body {
   list-style: none ;
   justify-content: space-between;
   padding-left: 0px ;
-  
+  gap: 50px ;
 }
 
-.navigation-and-contacts-item{
-  display: flex ;
-  align-items: center ;
-}
-
-.header-contacts-item {
-  padding-left: 50px;
-}
 
 
 .header-logo {
