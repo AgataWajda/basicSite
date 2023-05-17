@@ -125,17 +125,18 @@ body {
   background-color: #2f303a;
   text-align: center;
   height: 600px;
-  padding-top: 200px ;
-  padding-bottom: 200px ;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
-.page-title-and-button{
-  display:inline-block ;
-  
+.page-title-and-button {
+  display: inline-block;
 }
 
 .page-title {
+  box-sizing:border-box ;
   display: inline-block;
+  padding: 0 1em;
   height: 120px;
   width: 696px;
   font-weight: 900;
@@ -146,9 +147,9 @@ body {
 }
 
 .button {
-  display:block ;
-  margin-right: auto ;
-  margin-left: auto ;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
   margin-top: 30px;
   border-style: none;
   border-radius: 4px;
