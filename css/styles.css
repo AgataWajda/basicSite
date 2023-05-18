@@ -95,6 +95,12 @@ body {
   color: #fff;
   line-height: 1.46;
   font-style: normal;
+  margin-bottom: 9px ;
+
+}
+
+.mail {
+  margin-bottom: 9px ;
 }
 .contact {
   font-weight: 400;
@@ -107,6 +113,8 @@ body {
 .footer-contacts {
   list-style: none;
   font-style: normal;
+  padding-left: 0px ;
+  margin-top: 20px ;
 }
 
 .header-logo,
@@ -116,7 +124,11 @@ body {
   font-family: Raleway, sans-serif;
 }
 .footer-box {
+  box-sizing: border-box;
   background-color: #2f303a;
+  height: 252px ;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .main-section-box {
@@ -134,7 +146,7 @@ body {
 }
 
 .page-title {
-  box-sizing:border-box ;
+  box-sizing: border-box;
   display: inline-block;
   padding: 0 1em;
   height: 120px;
@@ -163,6 +175,16 @@ body {
   cursor: pointer;
 }
 
+.page-description-item {
+  display: inline-block;
+  width: 270px;
+  height: 101px;
+  margin-top: 96px;
+}
+.page-description-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .page-description-title {
   font-weight: 700;
   font-size: 14px;
@@ -175,28 +197,83 @@ body {
   line-height: 1.46;
 }
 
+.what-company-do {
+  margin-top: 94px;
+}
+
 .subtitle {
   font-size: 36px;
   font-weight: 700;
   text-align: center;
+  margin-bottom: 50px;
+}
+
+.company-offer {
+  padding-left: 0px;
 }
 
 .company-offer .company-offer-item {
-  display: inline;
+  display: inline-block;
+}
+
+.company-offer-item:not(:last-of-type) {
+  margin-right: 30px;
+}
+
+.team {
+  margin-top: 94px;
+  background-color: #f5f4fa;
+  padding-top: 94px;
+  margin-bottom: 0px;
+  padding-bottom: 94px;
+}
+
+.team-tittle {
+  margin-bottom: 50px;
 }
 
 .team-members .team-member {
   display: inline-block;
 }
 
+.team-members {
+  padding-left: 0px;
+}
+
+.team-member {
+  width: 270px;
+  height: 368px;
+  background-color: #fff;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.team-member:not(:last-of-type) {
+  margin-right: 30px;
+}
+
+.team-member-item {
+  margin: 0;
+  height: 368px;
+}
+
+
+
 .team-member-name {
   font-weight: 500;
   font-size: 16px;
+  text-align: center;
+  margin-top: 30px ;
+  margin-bottom: 10px;
 }
 .team-member-job {
+  text-align: center;
   font-weight: 400;
   font-size: 16px;
   color: #757575;
+  margin-top: 0px;
+  margin-bottom: 30px;
 }
 
 .portfolio-button {
