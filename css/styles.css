@@ -276,13 +276,67 @@ body {
   margin-bottom: 30px;
 }
 
+.portfolio-content {
+  margin: 0px ;
+}
+
+.portfolio-filters
+{
+  margin-top: 94px ;
+  margin-bottom: 94px ;
+}
+
+.portfolio-buttons-list {
+  margin-top: 0px ;
+  margin-bottom: 50px ;
+  padding-left: 0px ;
+}
+
+.portfolio-buttons-item {
+  display: inline-block ;
+  height: 38px;
+  width:121px ;
+}
+.portfolio-buttons-item:not(:last-of-type) {
+  margin-right: 8px ;
+}
+
 .portfolio-button {
-  font-weight: 500;
-  font-size: 16px;
+  height: 38px;
+  width:121px ;
+  padding: 0px ;
+  border: none ;
+  border-radius: 4px;
   line-height: 1.39;
+  font-weight:  500;
+  font-size: 16px ;
+  font-family: Roboto , sans-serif;
   background-color: #f5f4fa;
+  color:#212121 ;
   cursor: pointer;
 }
+.products{
+  margin: 0px ;
+  padding-left: 0px ;
+}
+
+
+.product {
+  display: inline-block;
+  height: 404px ;
+  width: 370px;
+  border: 1px solid #EEEEEE ;
+  margin-top: 0px ;
+}
+
+.product:not(:nth-of-type(3n)) {
+  margin-right: 30px ;
+}
+
+.product:nth-of-type(n + 3) {
+  margin-top: 30px ;
+}
+
 .portfolio-button:hover,
 .portfolio-button:focus {
   color: #ffffff;
@@ -292,11 +346,24 @@ body {
 .portfolio-filters {
   text-align: center;
 }
+
+.product-image-and-content {
+  margin: 0px ;
+}
+
+.product-description {
+margin: 20px 24px ;
+}
+
 .company-name {
   font-size: 18px;
   line-height: 1.71;
+  margin-bottom: 4px ;
+  margin-top: 0px ;
+  text-align: left;
 }
 .job-type {
   color: #757575;
   line-height: 1.6;
+  text-align: left;
 }
