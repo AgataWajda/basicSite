@@ -231,12 +231,23 @@ body {
   height: 101px;
 }
 
+
+
 .lorem-impusum {
   padding-bottom: 94px;
 }
 
 .page-description-item:not(:last-of-type) {
   margin-right: 30px;
+}
+
+.page-description-icon {
+  background-color: #F5F4FA;
+  box-sizing: border-box;
+  height: 120px;
+  margin-bottom: 30px;
+  padding: 25px 101px;
+  border-radius: 4px;
 }
 
 .page-description-title {
