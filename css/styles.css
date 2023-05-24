@@ -124,6 +124,8 @@ body {
 .header-link-phone:focus,
 .header-link-mail:hover,
 .header-link-mail:focus,
+.header-link:hover ,
+.header-link:focus ,
 .contact:hover,
 .contact:focus {
   color: #2196f3;
