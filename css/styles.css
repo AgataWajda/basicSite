@@ -374,6 +374,38 @@ body {
   fill: currentColor ;
 }
 
+.our-clients {
+  margin: 0 ;
+  padding-left: 0px ;
+}
+
+.our-clients .client-logo {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 170px ;
+  height: 92px;
+  border-color: #AFB1B8;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 4px;
+  padding: 17px 32px 14px 32px ;
+  color:#AFB1B8 ;
+}
+
+.client-logo:hover ,
+.client-logo:focus {
+  border-color: #2196F3 ;
+  color: #2196F3 ;
+}
+
+.client-logo-icon {
+  fill: currentColor ;
+}
+
+.client-logo:not(:last-of-type) {
+  margin-right: 30px ;
+}
+
 .portfolio-content {
   margin: 0px;
 }
