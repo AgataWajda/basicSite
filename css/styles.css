@@ -171,22 +171,19 @@ body {
 
 .footer-items-box {
   display: flex;
-  gap: 70px ;
+  gap: 70px;
 }
 
-
-
-.footer-aside{
-  padding-top: 12px ;
-  
+.footer-aside {
+  padding-top: 12px;
 }
 
 .join-us {
   color: #fff;
   font-size: 14px;
   font-weight: 700;
-  margin-top: 0px ;
-  margin-bottom: 20px ;
+  margin-top: 0px;
+  margin-bottom: 20px;
 }
 
 .footer-social-media .footer-icon-box {
@@ -196,17 +193,17 @@ body {
   width: 44px;
   border-radius: 50%;
   padding: 12px;
-  color: #fff ;
+  color: #fff;
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer-icon-box:hover ,
+.footer-icon-box:hover,
 .footer-icon-box:focus {
-  background-color: #2196F3;
+  background-color: #2196f3;
 }
 
 .footer-social-media-icon {
-  fill: currentColor ;
+  fill: currentColor;
 }
 
 .footer-icon-box:not(:last-of-type) {
@@ -500,7 +497,8 @@ body {
 .portfolio-button:focus {
   color: #ffffff;
   background-color: #2196f3;
-   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08) ,0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 .portfolio-filters {
@@ -509,12 +507,11 @@ body {
 
 .product-image-and-content {
   margin: 0px;
-
 }
 
-.product-image-and-content:hover ,
-.product-image-and-content:focus {
-  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+.product-image-and-content:hover {
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
 .product-description {
