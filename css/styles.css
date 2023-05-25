@@ -57,6 +57,7 @@ body {
   text-decoration: none;
 }
 
+
 .header-contacts-item {
   display: flex;
   color: #757575;
@@ -92,6 +93,7 @@ body {
 
 .header-logo {
   color: #000;
+  text-decoration: none;
 }
 
 .footer-logo {
