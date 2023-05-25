@@ -52,7 +52,8 @@ body {
 }
 
 .header-link,
-.header-contacts-item {
+.header-contacts-item, 
+.header-logo {
   text-decoration: none;
 }
 
