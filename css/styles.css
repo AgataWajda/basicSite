@@ -345,7 +345,8 @@ body {
 
 .team-social-media {
   margin-top: 16px ;
-  margin-left: 32px;
+  margin-left: 28px;
+ 
 }
 
 .team-icon-box {
@@ -353,11 +354,26 @@ body {
   display: inline-block ;
   width: 44px ;
   height: 44px;
+  color: #AFB1B8 ;
   border-radius: 50%;
   padding: 12px ;
-  border-color: #000;
-  border-style: dashed;
 }
+
+.team-icon-box:not(:nth-of-type(4n))
+{
+  margin-right: 10px ;
+}
+
+.team-icon-box:hover ,
+.team-icon-box:focus {
+  background-color: #2196F3;
+  color: #fff ;
+}
+
+.team-social-media-icon {
+  fill: currentColor ;
+}
+
 .portfolio-content {
   margin: 0px;
 }
