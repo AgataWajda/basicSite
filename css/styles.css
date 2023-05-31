@@ -325,11 +325,10 @@ body {
 
 .company-offer .company-offer-item {
   display: inline-block;
-  position: relative ;
-  box-sizing:border-box ;
-  max-height:294px ;
+  position: relative;
+  box-sizing: border-box;
+  max-height: 294px;
 }
-
 
 .company-offer-item:not(:last-of-type) {
   margin-right: 30px;
@@ -337,12 +336,12 @@ body {
 
 .company-offer-item > .offer-img-description {
   position: absolute;
-  width: 100% ;
+  width: 100%;
   margin: 0;
   bottom: 0;
   text-align: center;
-  padding-top: 27px ;
-  padding-bottom: 27px ;
+  padding-top: 27px;
+  padding-bottom: 27px;
   color: #fff;
   font-weight: 700;
   font-size: 14px;
