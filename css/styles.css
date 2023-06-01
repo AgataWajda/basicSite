@@ -79,6 +79,21 @@ body {
   fill: currentColor;
 }
 
+.current-page {
+  position: relative;
+}
+
+.current-page::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 100% ;
+  height: 4px ;
+  background-color: #2196f3;
+  top: 30px;
+  border-radius: 2px ;
+}
+
 .header-aside-list {
   display: flex;
   align-items: center;
