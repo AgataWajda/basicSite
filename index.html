@@ -90,7 +90,7 @@
       <div class="main-section-box">
         <div class="page-title-and-button">
           <h1 class="page-title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-          <button type="button" class="button">Zamów usługe</button>
+          <button type="button" class="button" data-modal-open>Zamów usługe</button>
         </div>
       </div>
       <article>
@@ -512,6 +512,17 @@
         </div>
       </div>
     </footer>
+    
+    <div class = "backdrop is-hidden" data-modal>
+      <div class = "modal-box">
+        <button type="button" class = "close-btn" data-modal-close>
+          <svg class ="close-svg" width = "14" height="14">
+            <use href ="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    
     <script src="./js/modal.js"></script>
   </body>
 </html>
