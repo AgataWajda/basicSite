@@ -623,6 +623,8 @@ body {
   left: 0 ;
   justify-content: center;
   align-items: center;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
@@ -639,6 +641,13 @@ body {
   box-sizing: border-box;
   background-color: #fff;
   margin: auto ;
+  transform: scale(1) ;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden .modal-box {
+  transform: scale(0) ;
 }
 
 .close-btn {
