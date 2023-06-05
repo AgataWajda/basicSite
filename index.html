@@ -90,7 +90,9 @@
       <div class="main-section-box">
         <div class="page-title-and-button">
           <h1 class="page-title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-          <button type="button" class="button" data-modal-open>Zamów usługe</button>
+          <button type="button" class="button" data-modal-open>
+            Zamów usługe
+          </button>
         </div>
       </div>
       <article>
@@ -512,17 +514,41 @@
         </div>
       </div>
     </footer>
-    
-    <div class = "backdrop is-hidden" data-modal>
-      <div class = "modal-box">
-        <button type="button" class = "close-btn" data-modal-close>
-          <svg class ="close-svg" width = "14" height="14">
-            <use href ="./images/icons.svg#icon-close-black"></use>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal-box">
+        <button type="button" class="close-btn" data-modal-close>
+          <svg class="close-svg" width="14" height="14">
+            <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
+        <h3 class ="modal-tittle">Zostaw swoje dane w formularzu poniżej</h3>
+        <forom name="contact-form" class="contact-form">
+          <label>
+            <p>Imie</p>
+            <input type="text" name="name" />
+          </label>
+          <label>
+           <p>Telefon</p>
+            <input type="tel" name="phone-number" />
+          </label>
+          <label>
+            <p>Email</p>
+            <input type="email" name="email" />
+          </label>
+          <label>
+            <p>Komentarz</p>
+            <input type="textarea" name="comment" />
+          </label>
+          <label>
+            <input type="radio" name="statement" />
+            Oświadczam iż akceptuję Regulamin i Politykę Prywatności.
+          </label>
+          <button type="submit">Wyślij</button>
+        </forom>
       </div>
     </div>
-    
+
     <script src="./js/modal.js"></script>
   </body>
 </html>
