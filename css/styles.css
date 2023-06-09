@@ -680,6 +680,23 @@ body {
   flex-direction: column;
   padding: 0 40px 20px 40px;
   gap: 10px;
+  font-family: Roboto;
+}
+
+.contact-form-box > textarea {
+  font-family: Roboto;
+}
+
+.contact-form-box > textarea::placeholder{
+  color:  #75757580;
+  
+
+}
+
+.contact-form-box > textarea:focus {
+    outline: none;
+    border-color: #2196F3;
+    
 }
 
 .contact-form-box > p {
@@ -741,6 +758,8 @@ body {
 }
 
 .statement-check {
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   display: none;
 }
@@ -766,10 +785,16 @@ body {
   cursor: pointer;
 }
 
-
 .statement {
   color: #757575;
   display: inline;
+  font-size: 14px ;
+  font-weight: 400;
+  margin-left: 4px ;
+}
+
+.statement > a {
+  color : #2196F3
 }
 
 .contact-button {
