@@ -17,68 +17,63 @@
     />
   </head>
   <body>
-    <header class="header">
+    <header class="page-header">
       <div class="conteiner">
-        <ul class="navigation-and-contacts">
-          <li>
-            <nav class="navigation">
-              <ul class="navigation-and-logo">
-                <li class="logo navigation-and-logo-child">
-                  <a href="index.html" class="header-logo"
-                    ><span class="logo-first-item">Web</span>Studio</a
+        <ul class="list page-header__wrapper">
+          <li class="page-heder__item">
+            <nav class="page-header__nav">
+              <ul class="list page-header__grid">
+                <li class="page-header__item">
+                  <a href="index.html" class="link main-logo page-header__logo"
+                    ><span class="main-logo--accent">Web</span>Studio</a
                   >
                 </li>
-
-                <li class="navigation-items navigation-and-logo-child">
-                  <ul class="navigation-list">
-                    <li class="navigation-item">
+                <li class="page-header__item">
+                  <ul class="list__grid">
+                    <li class="page-header__item">
                       <a
                         href="index.html"
-                        class="header-link navigation-item-link"
+                        class="link link--color-change page-header__text page-header__text--color"
                         >Agencja</a
                       >
                     </li>
-                    <li class="navigation-item current-page">
-                      <a
-                        href="portfolio.html"
-                        class="header-link navigation-item-link"
+                    <li class="page-header__item current-page">
+                      <a href="portfolio.html" class="link link--color-change page-header__text page-header__text--color"
                         >Portfolio</a
                       >
                     </li>
-                    <li class="navigation-item">
-                      <a
-                        href="./"
-                        class="header-link navigation-item-link"
-                        >Kontakt</a
-                      >
+                    <li class="page-header__item">
+                      <a href="./" class="link link--color-change page-header__text page-header__text--color">Kontakt</a>
                     </li>
                   </ul>
                 </li>
               </ul>
             </nav>
           </li>
-          <li class="header-aside-list">
-            <aside>
-              <ul class="header-contacts-list">
-                <li class="header-contacts-item">
-                  <svg class="envelope" width="16" height="12">
-                    <use href="./images/icons.svg#icon-envelope-2-1"></use>
-                  </svg>
+          <li class="page-header__item page-header__aside">
+            <aside class="page-header__item">
+              <ul class="list list__wrapper">
+                <li class="page-header__item">
                   <a
                     href="mailto:info@devstudio.com"
-                    class="header-link header-link-mail"
-                    >info@devstudio.com</a
+                    class="link link--color-change page-header__text page-header__contact"
                   >
+                    <svg class="page-header__icon" width="16" height="12">
+                      <use href="./images/icons.svg#icon-envelope-2-1"></use>
+                    </svg>
+                    info@devstudio.com
+                  </a>
                 </li>
-                <li class="header-contacts-item">
-                  <svg class="smartphone" width="10" height="16">
-                    <use href="./images/icons.svg#icon-smartphone-1"></use>
-                  </svg>
+                <li class="page-header__item">
                   <a
                     href="tel:+48111111111"
-                    class="header-link header-link-phone"
-                    >+48 111 111 111</a
+                    class="link link--color-change page-header__text page-header__contact"
                   >
+                    <svg class="page-header__icon" width="10" height="16">
+                      <use href="./images/icons.svg#icon-smartphone-1"></use>
+                    </svg>
+                    +48 111 111 111
+                  </a>
                 </li>
               </ul>
             </aside>
