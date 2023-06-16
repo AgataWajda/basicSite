@@ -53,13 +53,11 @@ body {
 
 .link {
   text-decoration: none;
-}
-
-.link--color-change {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .header-contacts-item {
   display: flex;
@@ -120,14 +118,14 @@ body {
 color: #212121;
 }
 
-.page-header__contact {
+.page-header__contact-link {
   font-weight: 500;
   font-size: 14px;
   color: #757575;
 }
 
-.link--color-change:hover,
-.link--color-change:focus,
+.link:hover,
+.link:focus,
 .contact:hover,
 .contact:focus {
   color: #2196f3;
@@ -163,6 +161,7 @@ color: #212121;
 
 .main-logo,
 .footer-logo {
+  text-decoration: none ;
   font-weight: 700;
   font-size: 26px;
   font-family: Raleway, sans-serif;
@@ -275,7 +274,7 @@ color: #212121;
   fill: #fff;
 }
 
-.main-section-box {
+.main-box {
   box-sizing: border-box;
   display: block;
   background-color: #2f303a;
@@ -295,11 +294,11 @@ color: #212121;
   padding-bottom: 200px;
 }
 
-.page-title-and-button {
+.main-box__wrapper{
   display: inline-block;
 }
 
-.page-title {
+.main-box__title {
   box-sizing: border-box;
   display: inline-block;
   padding: 0 1em;
@@ -314,9 +313,7 @@ color: #212121;
 
 .button {
   display: block;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 30px;
+  margin:auto ;
   border-style: none;
   border-radius: 4px;
   height: 50px;
@@ -329,21 +326,21 @@ color: #212121;
   cursor: pointer;
 }
 
-.page-description-item {
+.section-box {
   display: inline-block;
   width: 270px;
   height: 101px;
 }
 
-.lorem-impusum {
+.article {
   padding-bottom: 94px;
 }
 
-.page-description-item:not(:last-of-type) {
+.section-box:not(:last-of-type) {
   margin-right: 30px;
 }
 
-.page-description-icon {
+.section-box__icon-box {
   background-color: #f5f4fa;
   box-sizing: border-box;
   height: 120px;
@@ -352,13 +349,13 @@ color: #212121;
   border-radius: 4px;
 }
 
-.page-description-title {
+.section-box__subtitle {
   font-weight: 700;
   font-size: 14px;
   margin: 0px;
 }
 
-.page-description {
+.section-box__text {
   font-weight: 400;
   font-size: 14px;
   color: #757575;
@@ -366,7 +363,7 @@ color: #212121;
   margin-bottom: 0px;
 }
 
-.subtitle {
+.section-title {
   font-size: 36px;
   font-weight: 700;
   text-align: center;
@@ -375,23 +372,23 @@ color: #212121;
   margin-top: 0px;
 }
 
-.company-offer {
+.company-offer__list {
   padding-left: 0px;
   margin: 0;
 }
 
-.company-offer .company-offer-item {
+ .company-offer__item {
   display: inline-block;
   position: relative;
   box-sizing: border-box;
   max-height: 294px;
 }
 
-.company-offer-item:not(:last-of-type) {
+.company-offer__item:not(:last-of-type) {
   margin-right: 30px;
 }
 
-.company-offer-item > .offer-img-description {
+.company-offer__description {
   position: absolute;
   width: 100%;
   margin: 0;
@@ -410,16 +407,14 @@ color: #212121;
   margin-bottom: 0px;
 }
 
-.team-members .team-member {
-  display: inline-block;
-}
 
-.team-members {
+.team__members {
   padding-left: 0px;
   margin: 0px;
 }
 
-.team-member {
+.member-box {
+  display: inline-block;
   width: 270px;
   height: 428px;
   background-color: #fff;
@@ -428,29 +423,29 @@ color: #212121;
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.team-member:not(:last-of-type) {
+.member-box:not(:last-of-type) {
   margin-right: 30px;
 }
 
-.team-member-item {
+.member-box__item {
   margin: 0;
   height: 428px;
 }
 
-.team-member-description {
+.member-box__description {
   box-sizing: border-box;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.team-member-name {
+.member-box__name {
   font-weight: 500;
   font-size: 16px;
   text-align: center;
   margin-bottom: 10px;
   margin-top: 0px;
 }
-.team-member-job {
+.member-box__job {
   text-align: center;
   font-weight: 400;
   font-size: 16px;
@@ -844,15 +839,7 @@ color: #212121;
 }
 
 .contact-button {
-  width: 200px;
-  height: 50px;
-  margin: auto;
-  background-color: #2196f3;
-  border: none;
-  border-radius: 4px;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 700;
+  
   box-shadow: 0 4px 4px #00000026;
-  cursor: pointer;
+  
 }
