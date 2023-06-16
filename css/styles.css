@@ -35,14 +35,14 @@ body {
 }
 
 
-.page-header__grid {
+.page-header__nav-grid {
   display: flex;
   padding-left: 0px;
   align-items: center;
   gap: 96px;
 }
 
-.list__grid {
+.page-header__links {
   display: flex;
   list-style: none;
   padding-left: 0px;
@@ -92,7 +92,7 @@ body {
   display: flex;
   align-items: center;
 }
-.list__wrapper {
+.page-header__contacts {
   display: flex;
   justify-content: space-between;
   padding-left: 0px;
@@ -114,15 +114,15 @@ body {
 .footer-logo > .logo-first-item {
   color: #2196f3;
 }
-.page-header__text{
+.main-links__link{
   font-weight: 500;
   font-size: 14px;
-}
-.page-header__text--color {
 color: #212121;
 }
+
 .page-header__contact {
- 
+  font-weight: 500;
+  font-size: 14px;
   color: #757575;
 }
 
