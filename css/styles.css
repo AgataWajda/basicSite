@@ -505,23 +505,20 @@ color: #212121;
   margin: 0px;
 }
 
-.portfolio-buttons-list {
+.portfolio-buttons {
   margin-top: 0px;
   margin-bottom: 0px;
   padding-bottom: 50px;
   padding-left: 0px;
+  text-align: center;
 }
 
-.portfolio-buttons-item {
-  display: inline-block;
-  height: 38px;
-  width: 121px;
-}
-.portfolio-buttons-item:not(:last-of-type) {
+
+.portfolio-buttons__btn:not(:last-of-type) {
   margin-right: 8px;
 }
 
-.portfolio-button {
+.portfolio-buttons__btn {
   height: 38px;
   width: 121px;
   box-sizing: border-box;
@@ -535,59 +532,60 @@ color: #212121;
   background-color: #f5f4fa;
   color: #212121;
   cursor: pointer;
+  display: inline-block;
+  height: 38px;
+  width: 121px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.products {
+.portfolio-content__products {
   margin: 0px;
   padding-left: 0px;
 }
 
-.product {
+.portfolio-content__product {
   display: inline-block;
   height: 404px;
   width: 370px;
   margin-top: 0px;
 }
 
-.product:not(:nth-of-type(3n)) {
+.portfolio-content__product:not(:nth-of-type(3n)) {
   margin-right: 30px;
 }
 
-.product:nth-of-type(n + 4) {
+.portfolio-content__product:nth-of-type(n + 4) {
   margin-top: 30px;
 }
 
-.portfolio-button:hover,
-.portfolio-button:focus {
+.portfolio-buttons__btn:hover,
+.portfolio-buttons__btn:focus {
   color: #ffffff;
   background-color: #2196f3;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
-.portfolio-filters {
-  text-align: center;
-}
 
-.product-image-and-content {
+
+.product__box {
   margin: 0px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.product-image-and-content:hover,
-.product-image-and-content:focus {
+.product__box:hover,
+.product__box:focus {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
     0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
-.overlay-box {
+.product__overlay-box {
   position: relative;
   overflow: hidden;
 }
 
-.overlay {
+.product__overlay {
   position: absolute;
   box-sizing: border-box;
   top: 0;
@@ -602,16 +600,16 @@ color: #212121;
   color: #fff;
   background-color: #2196f3e5;
   padding: 49px 45px 49px 24px;
-  transform: translateY(100%);
+  transform: translateY(110%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.product-image-and-content:hover .overlay,
-.product-image-and-content:focus .overlay {
+.product__box:hover .product__overlay,
+.product__box:focus .product__overlay {
   transform: translateY(0);
 }
 
-.product-description {
+.product__description {
   box-sizing: border-box;
   padding: 20px 24px;
   height: 110px;
@@ -620,14 +618,14 @@ color: #212121;
   border-right: 1px solid #eeeeee;
 }
 
-.company-name {
+.product__company {
   font-size: 18px;
   line-height: 1.71;
   margin-bottom: 4px;
   margin-top: 0px;
   text-align: left;
 }
-.job-type {
+.product__type {
   color: #757575;
   line-height: 1.6;
   text-align: left;
