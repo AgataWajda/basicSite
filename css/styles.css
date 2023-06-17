@@ -454,12 +454,12 @@ color: #212121;
   margin-bottom: 0px;
 }
 
-.team-social-media {
+.member-box__social {
   margin-top: 16px;
   margin-left: 28px;
 }
 
-.team-icon-box {
+.member-box__icon-box {
   box-sizing: border-box;
   display: inline-block;
   width: 44px;
@@ -471,17 +471,17 @@ color: #212121;
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-icon-box:not(:nth-of-type(4n)) {
+.member-box__icon-box:not(:nth-of-type(4n)) {
   margin-right: 10px;
 }
 
-.team-icon-box:hover,
-.team-icon-box:focus {
+.member-box__icon-box:hover,
+.member-box__icon-box:focus {
   background-color: #2196f3;
   color: #fff;
 }
 
-.team-social-media-icon {
+.icon {
   fill: currentColor;
 }
 
@@ -511,9 +511,6 @@ color: #212121;
   color: #2196f3;
 }
 
-.client-logo-icon {
-  fill: currentColor;
-}
 
 .client-logo:not(:last-of-type) {
   margin-right: 30px;
