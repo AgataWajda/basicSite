@@ -421,37 +421,37 @@
           </div>
         </div>
       </article>
-      <article>
+      <article class = "clients">
         <div class="section">
           <div class="conteiner">
             <h2 class="section-title">Nasi klienci</h2>
-            <ul class="our-clients">
-              <li class="client-logo">
+            <ul class="clients__list">
+              <li class="clients__logo">
                 <svg class="icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-Logo-6"></use>
                 </svg>
               </li>
-              <li class="client-logo">
+              <li class="clients__logo">
                 <svg class="icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-Logo-1-1"></use>
                 </svg>
               </li>
-              <li class="client-logo">
+              <li class="clients__logo">
                 <svg class="icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-Logo-2-1"></use>
                 </svg>
               </li>
-              <li class="client-logo">
+              <li class="clients__logo">
                 <svg class="icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-Logo-3-1"></use>
                 </svg>
               </li>
-              <li class="client-logo">
+              <li class="clients__logo">
                 <svg class="icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-Logo-4-1"></use>
                 </svg>
               </li>
-              <li class="client-logo">
+              <li class="clients__logo">
                 <svg class="icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-Logo-5-1"></use>
                 </svg>
@@ -461,64 +461,64 @@
         </div>
       </article>
     </main>
-    <footer class="footer-box">
+    <footer class="page-footer">
       <div class="conteiner">
-        <div class="footer-items-box">
-          <address class="footer-item">
-            <a href="/webstudio" class="footer-logo"
-              ><span class="logo-first-item">Web</span>Studio</a
+        <div class="page-footer__box footer-box">
+          <address class="footer-box__adress">
+            <a href="/webstudio" class="main-logo footer-box__logo"
+              ><span class="main-logo--accent">Web</span>Studio</a
             >
-            <ul class="footer-contacts">
-              <li class="adress">m. Warszawa, Aleje Jerozolimskie 21</li>
-              <li class="mail">
-                <a href="mailto:info@devstudio.com" class="contact"
+            <ul class="footer-box__contacts">
+              <li class="footer-box__adress">m. Warszawa, Aleje Jerozolimskie 21</li>
+              <li class="footer-box__mail">
+                <a href="mailto:info@devstudio.com" class="footer-box__link"
                   >info@devstudio.com</a
                 >
               </li>
-              <li>
-                <a href="tel:+48111111111" class="contact">+48 111 111 111</a>
+              <li class="footer-box__phone">
+                <a href="tel:+48111111111" class="footer-box__link">+48 111 111 111</a>
               </li>
             </ul>
           </address>
-          <aside class="footer-aside">
-            <p class="join-us">DOŁĄCZ DO NAS:</p>
-            <div class="footer-social-media">
-              <div class="footer-icon-box">
-                <svg class="footer-social-media-icon" height="20" width="20">
+          <aside class="footer-box__aside">
+            <p class="footer-box__text">DOŁĄCZ DO NAS:</p>
+            <div class="footer-box__social">
+              <div class="footer-box__icon-box">
+                <svg class="icon" height="20" width="20">
                   <use href="./images/icons.svg#icon-instagram-2-1"></use>
                 </svg>
               </div>
-              <div class="footer-icon-box">
-                <svg class="footer-social-media-icon" height="20" width="20">
+              <div class="footer-box__icon-box">
+                <svg class="icon" height="20" width="20">
                   <use href="./images/icons.svg#icon-twitter-1-1"></use>
                 </svg>
               </div>
-              <div class="footer-icon-box">
-                <svg class="footer-social-media-icon" height="20" width="20">
+              <div class="footer-box__icon-box">
+                <svg class="icon" height="20" width="20">
                   <use href="./images/icons.svg#icon-facebook-1-1"></use>
                 </svg>
               </div>
-              <div class="footer-icon-box">
-                <svg class="footer-social-media-icon" height="20" width="20">
+              <div class="footer-box__icon-box">
+                <svg class="icon" height="20" width="20">
                   <use href="./images/icons.svg#icon-linkedin-1-1"></use>
                 </svg>
               </div>
             </div>
           </aside>
-          <form class="newsletter-form">
-            <p class="newsletter-title">ZAPISZ SIĘ DO NEWSLETTERA</p>
-            <label>
+          <form class="footer-box__form">
+            <p class="footer-box__text">ZAPISZ SIĘ DO NEWSLETTERA</p>
+            <label class = "footer-box__label">
               <input
                 name="newsletter-mail"
                 type="email"
                 placeholder="E-mail"
-                class="input-mail"
+                class="footer-box__input-mail"
                 required
               />
             </label>
-            <button type="submit" class="submit-newsletter">
-              <p>Zapisz się</p>
-              <svg width="24" height="24">
+            <button type="submit" class="footer-box__submit">
+              <p class="footer-box__sumbit-text">Zapisz się</p>
+              <svg width="24" height="24" class ="footer-box__btn-icon">
                 <use href="./images/icons.svg#icon-icon-send"></use>
               </svg>
             </button>
@@ -529,71 +529,71 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-box">
-        <button type="button" class="close-btn" data-modal-close>
-          <svg class="close-svg" width="14" height="14">
+        <button type="button" class="modal-box__close" data-modal-close>
+          <svg class="modal-box__close-svg" width="14" height="14">
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
-        <h3 class="modal-tittle">Zostaw swoje dane w formularzu poniżej</h3>
-        <form name="contact-form" class="contact-form">
-          <label class="contact-form-box">
-            <p>Imie</p>
-            <div class="form-input-box">
-              <svg class="form-data-icon" width="18" height="18">
+        <h3 class="modal-box__title">Zostaw swoje dane w formularzu poniżej</h3>
+        <form name="contact-form" class="modal-box__form">
+          <label class="modal-box__label">
+            <p class = "modal-box__text">Imie</p>
+            <div class="modal-box__input-box">
+              <svg class="modal-box__icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
               </svg>
-              <input type="text" name="name" class="form-input" required />
+              <input type="text" name="name" class="modal-box__input" required />
             </div>
           </label>
-          <label class="contact-form-box">
-            <p>Telefon</p>
-            <div class="form-input-box">
+          <label class="modal-box__label">
+            <p class="modal-box__text">Telefon</p>
+            <div class="modal-box__input-box">
               <input
                 type="tel"
                 name="phone-number"
-                class="form-input"
+                class="modal-box__input"
                 required
-              /><svg class="form-data-icon" width="18" height="18">
+              /><svg class="modal-box__icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
               </svg>
             </div>
           </label>
-          <label class="contact-form-box">
-            <p>Email</p>
-            <div class="form-input-box">
+          <label class="modal-box__label">
+            <p class ="modal-box__text">Email</p>
+            <div class="modal-box__input-box">
               <input
                 type="email"
                 name="email"
-                class="form-input"
+                class="modal-box__input"
                 required
-              /><svg class="form-data-icon" width="18" height="18">
+              /><svg class="modal-box__icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
               </svg>
             </div>
           </label>
-          <label class="contact-form-box">
-            <p>Komentarz</p>
+          <label class="modal-box__label">
+            <p class ="modal-box__text">Komentarz</p>
             <textarea
               name="comment"
-              class="comment"
+              class="modal-box__comment"
               placeholder="Wprowadź tekst"
               required
             ></textarea>
           </label>
-          <label class="statement-box">
+          <label class="modal-box__statement-box">
             <input
               type="checkbox"
               name="statement"
               value="yes"
-              class="statement-check"
+              class="modal-box__input-check"
               required
             />
-            <div class="checked">
+            <div class="modal-box__checked">
               <svg width="16" height="15">
                 <use href="./images/icons.svg#icon-icon-check"></use>
               </svg>
             </div>
-            <div class="not-checked">
+            <div class="modal-box__not-checked">
               <svg width="16" height="15">
                 <use href="./images/icons.svg#icon-vector"></use>
               </svg>
@@ -603,7 +603,7 @@
               <a href="./">Politykę Prywatności.</a>
             </p>
           </label>
-          <button class="button contact-button" type="submit">Wyślij</button>
+          <button class="button modal-box__button" type="submit">Wyślij</button>
         </form>
       </div>
     </div>
