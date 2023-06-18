@@ -1,0 +1,36 @@
+@import '../utils/vars.scss' ;
+
+.article {
+    padding-bottom: 94px;
+}
+
+.section-box {
+    display: inline-block;
+    @include size(270px, 101px) ;
+
+    &:not(:last-of-type) {
+        margin-right: 30px;
+      }
+      
+    &__icon-box {
+        background-color: $background-light;
+        box-sizing: border-box;
+        height: 120px;
+        margin-bottom: 30px;
+        padding: 25px 101px;
+        border-radius: 4px;
+      }
+    
+      &__subtitle {
+        @include font-parameters(14px , 700) ;
+        margin: 0px;
+      }
+
+      &__text {
+        @include font-parameters(14px, 400) ;
+        color: $bright-color;
+        margin-bottom: 0px;
+        line-height: 1.46;
+      }
+      
+  }

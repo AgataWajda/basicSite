@@ -1,0 +1,76 @@
+@import "../utils/vars.scss";
+
+.team {
+  background-color: $background-light;
+  margin-bottom: 0px;
+
+  &__members {
+    padding-left: 0px;
+    margin: 0px;
+  }
+}
+
+.member-box {
+  display: inline-block;
+  @include size(270px, 428px);
+  background-color: #fff;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  &:not(:last-of-type) {
+    margin-right: 30px;
+  }
+
+  &__item {
+    margin: 0;
+    height: 428px;
+  }
+
+  &__description {
+    box-sizing: border-box;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  &__name {
+    @include font-parameters(16px, 500) ;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 0px;
+  }
+
+  &__job {
+    text-align: center;
+    @include font-parameters(16px, 400) ;
+    color: $bright-color;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  &__social {
+    margin-top: 16px;
+    margin-left: 28px;
+  }
+
+  &__icon-box {
+    box-sizing: border-box;
+    display: inline-block;
+    @extend %social-media-icon ;
+    color: #afb1b8;
+    padding: 12px;
+    @include transition(color) ;
+    @include transition(background-color);
+
+    &:not(:nth-of-type(4n)) {
+      margin-right: 10px;
+    }
+
+    &:hover, &:focus {
+      background-color: $brand-color;
+      color: #fff;
+    }
+
+  }
+  
+}

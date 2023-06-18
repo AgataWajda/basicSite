@@ -1,43 +1,43 @@
-$body-color: #212121 ;
-$brand-color: #2196f3 ;
-$bright-color: #757575 ;
-$dark-motive: #2f303a ;
+$body-color: #212121;
+$brand-color: #2196f3;
+$bright-color: #757575;
+$dark-motive: #2f303a;
+$background-light: #f5f4fa ;
 
 %social-media-icon {
-    width: 44px ;
-    height: 44px ;
-    border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
 }
 
 %brand-button {
-    height: 50px;
-    width: 200px;
-    background-color: $brand-color;
-    border-radius: 4px;
-    border: none;
-    cursor: pointer;
+  height: 50px;
+  width: 200px;
+  background-color: $brand-color;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
 }
 
 @mixin size($width, $height) {
-    height: $height;
-    width: $width;
+  height: $height;
+  width: $width;
 }
 
-@mixin grid ($gap){
-    display: flex;
-    gap: $gap ;
-    padding-left: 0px;
-    list-style: none;
+@mixin grid($gap) {
+  display: flex;
+  gap: $gap;
+  padding-left: 0px;
+  list-style: none;
 }
 
-@mixin transition($property){
-    transition-property: $property;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+@mixin transition($property) {
+  transition-property: $property;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@mixin font-parameters($size , $weight) {
-    font-size: $size ;
-    font-weight: $weight ;
+@mixin font-parameters($size, $weight) {
+  font-size: $size;
+  font-weight: $weight;
 }
-

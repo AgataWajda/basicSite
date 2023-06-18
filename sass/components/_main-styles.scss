@@ -18,3 +18,19 @@ body {
   .icon {
     fill: currentColor ;
   }
+  .button {
+    display: block;
+    margin:auto ;
+    font-weight: 700;
+    font-size: 16px;
+    @extend %brand-button ;
+    color: #fff;
+  }
+
+  .section-title {
+    @include font-parameters(36px, 700);
+    text-align: center;
+    padding-bottom: 50px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }

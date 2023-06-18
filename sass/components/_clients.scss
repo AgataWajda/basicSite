@@ -1,0 +1,32 @@
+@import '../utils/vars.scss' ;
+
+.clients {
+  &__list {
+    margin: 0;
+    padding-left: 0px;
+  }
+
+  &__logo {
+    display: inline-block;
+    box-sizing: border-box;
+    @include size(170px, 92px) ;
+    @include transition(border-box) ;
+    @include transition (color) ;
+    border-color: #afb1b8;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    padding: 17px 32px 14px 32px;
+    color: #afb1b8;
+
+    &:hover, &:focus {
+      border-color: $brand-color;
+      color: $brand-color;
+    }
+
+    &:not(:last-of-type) {
+        margin-right: 30px;
+      }
+  }
+  
+}

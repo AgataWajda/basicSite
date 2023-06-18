@@ -1,0 +1,32 @@
+@import "../utils/vars.scss";
+
+.company-offer {
+  &__list {
+    padding-left: 0px;
+    margin: 0;
+  }
+
+  &__item {
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    max-height: 294px;
+
+    &:not(:last-of-type) {
+      margin-right: 30px;
+    }
+  }
+
+  &__description {
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    bottom: 0;
+    text-align: center;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    color: #fff;
+    @include font-parameters (14px, 700) ;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+}
