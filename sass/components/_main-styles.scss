@@ -1,0 +1,17 @@
+@import '../utils/vars.scss' ;
+
+.body {
+    font-family: Roboto, Raleway, sans-serif;
+    color: $body-color;
+    margin: 0;
+  }
+  
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  
+  .conteiner {
+    margin: 0px auto;
+    width: 1200px;
+  }

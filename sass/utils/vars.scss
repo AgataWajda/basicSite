@@ -1,0 +1,23 @@
+$body-color: #212121 ;
+$black: #000 ;
+$brand-color: #2196f3 ;
+$bright-color: #757575 ;
+
+
+@mixin grid ($gap){
+    display: flex;
+    gap: $gap ;
+    padding-left: 0px;
+    list-style: none;
+}
+
+@mixin transition($property){
+    transition-property: $property;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@mixin font-parameters($size , $weight) {
+    font-size: $size ;
+    font-weight: $weight ;
+}
