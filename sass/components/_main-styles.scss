@@ -1,6 +1,6 @@
 @import '../utils/vars.scss' ;
 
-.body {
+body {
     font-family: Roboto, Raleway, sans-serif;
     color: $body-color;
     margin: 0;
@@ -14,4 +14,7 @@
   .conteiner {
     margin: 0px auto;
     width: 1200px;
+  }
+  .icon {
+    fill: currentColor ;
   }

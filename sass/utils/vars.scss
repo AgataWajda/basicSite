@@ -1,8 +1,27 @@
 $body-color: #212121 ;
-$black: #000 ;
 $brand-color: #2196f3 ;
 $bright-color: #757575 ;
+$dark-motive: #2f303a ;
 
+%social-media-icon {
+    width: 44px ;
+    height: 44px ;
+    border-radius: 50%;
+}
+
+%brand-button {
+    height: 50px;
+    width: 200px;
+    background-color: $brand-color;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+@mixin size($width, $height) {
+    height: $height;
+    width: $width;
+}
 
 @mixin grid ($gap){
     display: flex;
@@ -21,3 +40,4 @@ $bright-color: #757575 ;
     font-size: $size ;
     font-weight: $weight ;
 }
+

@@ -1,0 +1,105 @@
+@import "../utils/vars.scss";
+
+.page-footer {
+  box-sizing: border-box;
+  background-color: #2f303a;
+  height: 252px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-box {
+  @include grid(70px);
+
+  &__contacts {
+    list-style: none;
+    padding-left: 0px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+
+  &__adress {
+    @include font-parameters(14px, 400);
+    color: #fff;
+    font-style: normal;
+    margin-bottom: 9px;
+  }
+  &__mail {
+    margin-bottom: 9px;
+  }
+
+  &__link {
+    @include font-parameters(14px, 400);
+    color: #ffffff99;
+    text-decoration: none;
+  }
+
+  &__text {
+    color: #fff;
+    @include font-parameters(14px, 700);
+    margin-top: 0px;
+    margin-bottom: 20px;
+    padding-top: 12px;
+  }
+
+  &__icon-box {
+    display: inline-block;
+    box-sizing: border-box;
+    @extend %social-media-icon;
+    @include transition(background-color);
+    padding: 12px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    &:not(:last-of-type) {
+      margin-right: 10px;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $brand-color;
+    }
+  }
+
+  &__input-mail {
+    @include size(358px, 50px);
+    margin-right: 12px;
+    box-sizing: border-box;
+    padding-left: 16px;
+    background-color: $dark-motive;
+    border-style: solid;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px #00000026;
+    border-color: #ffffff4d;
+    @include transition(border-color);
+    color: #fff;
+
+    &:focus,
+    &:hover {
+      color: #fff;
+      outline: none;
+      border-color: $brand-color;
+    }
+  }
+  &__submit {
+    @extend %brand-button ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 46px;
+    display: inline-flex;
+    gap: 24px;
+    align-items: center;
+  }
+
+  &__sumbit-text {
+    display: inline;
+    @include font-parameters(16px, 700) ;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  &__btn-icon {
+    fill: #fff;
+  }
+}
