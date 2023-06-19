@@ -1,36 +1,36 @@
-@import '../utils/vars.scss' ;
+@import "../utils/vars.scss";
 
 body {
-    font-family: Roboto, Raleway, sans-serif;
-    color: $body-color;
-    margin: 0;
-  }
-  
-  .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-  
-  .conteiner {
-    margin: 0px auto;
-    width: 1200px;
-  }
-  .icon {
-    fill: currentColor ;
-  }
-  .button {
-    display: block;
-    margin:auto ;
-    font-weight: 700;
-    font-size: 16px;
-    @extend %brand-button ;
-    color: #fff;
-  }
+  font-family: Roboto, Raleway, sans-serif;
+  color: $body-color;
+  margin: 0;
+}
 
-  .section-title {
-    @include font-parameters(36px, 700);
-    text-align: center;
-    padding-bottom: 50px;
-    margin-bottom: 0px;
-    margin-top: 0px;
-  }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.conteiner {
+  margin: 0px auto;
+  width: 1200px;
+}
+.icon {
+  fill: currentColor;
+}
+.button {
+  display: block;
+  margin: auto;
+  font-weight: 700;
+  font-size: 16px;
+  @extend %brand-button;
+  color: #fff;
+}
+
+.section-title {
+  @include font-parameters(36px, 700);
+  text-align: center;
+  padding-bottom: 50px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}

@@ -82,7 +82,7 @@
     }
   }
   &__submit {
-    @extend %brand-button ;
+    @extend %brand-button;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 46px;
@@ -93,7 +93,7 @@
 
   &__sumbit-text {
     display: inline;
-    @include font-parameters(16px, 700) ;
+    @include font-parameters(16px, 700);
     color: #fff;
     margin-top: 0;
     margin-bottom: 0;

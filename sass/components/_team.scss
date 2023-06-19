@@ -34,7 +34,7 @@
   }
 
   &__name {
-    @include font-parameters(16px, 500) ;
+    @include font-parameters(16px, 500);
     text-align: center;
     margin-bottom: 10px;
     margin-top: 0px;
@@ -42,7 +42,7 @@
 
   &__job {
     text-align: center;
-    @include font-parameters(16px, 400) ;
+    @include font-parameters(16px, 400);
     color: $bright-color;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -56,21 +56,20 @@
   &__icon-box {
     box-sizing: border-box;
     display: inline-block;
-    @extend %social-media-icon ;
+    @extend %social-media-icon;
     color: #afb1b8;
     padding: 12px;
-    @include transition(color) ;
+    @include transition(color);
     @include transition(background-color);
 
     &:not(:nth-of-type(4n)) {
       margin-right: 10px;
     }
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       background-color: $brand-color;
       color: #fff;
     }
-
   }
-  
 }

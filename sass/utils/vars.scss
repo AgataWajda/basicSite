@@ -2,7 +2,7 @@ $body-color: #212121;
 $brand-color: #2196f3;
 $bright-color: #757575;
 $dark-motive: #2f303a;
-$background-light: #f5f4fa ;
+$background-light: #f5f4fa;
 
 %social-media-icon {
   width: 44px;
@@ -19,9 +19,21 @@ $background-light: #f5f4fa ;
   cursor: pointer;
 }
 
+%check-hidden {
+  visibility: hidden;
+  display: none;
+}
+
+%check-visible {
+  visibility: visible;
+  display: inline;
+  cursor: pointer;
+}
+
 @mixin size($width, $height) {
   height: $height;
   width: $width;
+  box-sizing: border-box;
 }
 
 @mixin grid($gap) {

@@ -41,12 +41,13 @@
 
   &__contact-link {
     @include font-parameters(14px, 500);
-    @include transition(color) ;
+    @include transition(color);
     color: $bright-color;
     text-decoration: none;
 
-    &:hover , &:focus {
-      color: $brand-color ;
+    &:hover,
+    &:focus {
+      color: $brand-color;
     }
   }
 }
