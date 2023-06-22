@@ -5,11 +5,24 @@
 }
 
 .section-box {
-  display: inline-block;
-  @include size(270px, 101px);
-
-  &:not(:last-of-type) {
-    margin-right: 30px;
+  display: inline;
+  height: 120px;
+  
+  @media screen and (min-width: $tablet) {
+    display: inline-block;
+    max-width: 354px ;
+   
+    &:not(:nth-of-type(2n)) {
+      margin-right: 30px;
+    }
+  
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: 270px ;
+    &:not(:last-of-type) {
+      margin-right: 30px;
+    }
+  
   }
 
   &__icon-box {
@@ -17,13 +30,32 @@
     box-sizing: border-box;
     height: 120px;
     margin-bottom: 30px;
-    padding: 25px 101px;
+    padding-top: 25px ;
+    text-align: center;
     border-radius: 4px;
+    margin-top: 30px ;
+    
+    @media screen and (max-width: $tablet){
+      margin-top: 0px;
+     
+      &:nth-of-type(n + 2)
+      {
+        margin-top: 30px ;
+      }
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-top: 0px ;
+    }
   }
 
   &__subtitle {
     @include font-parameters(14px, 700);
     margin: 0px;
+
+    @media screen and (max-width: $phone){
+      text-align: center;
+    }
   }
 
   &__text {
@@ -31,5 +63,7 @@
     color: $bright-color;
     margin-bottom: 0px;
     line-height: 1.46;
+
+  
   }
 }

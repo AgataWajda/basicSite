@@ -13,7 +13,15 @@ body {
 
 .conteiner {
   margin: 0px auto;
-  width: 1200px;
+  max-width: 450px ;
+
+  @media screen and (min-width: $tablet) {
+    max-width: 768px ;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 1200px ;
+  }
 }
 .icon {
   fill: currentColor;
