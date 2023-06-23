@@ -12,11 +12,11 @@ body {
 }
 
 .conteiner {
-  margin: 0px auto;
-  max-width: 450px ;
 
   @media screen and (min-width: $tablet) {
     max-width: 768px ;
+    margin: 0px auto;
+  max-width: 450px ;
   }
 
   @media screen and (min-width: $desktop) {
@@ -42,3 +42,4 @@ body {
   margin-bottom: 0px;
   margin-top: 0px;
 }
+
