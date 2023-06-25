@@ -8,18 +8,44 @@
   padding-top: 118px;
   padding-bottom: 118px;
   background-image: linear-gradient(
-      to bottom,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/background-image.jpg);
+    to bottom,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  );
+  background-image: url(../images/background-mobile.jpg);
   background-size: cover;
   background-position: center;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/background-mobile@2x.jpg);
+  }
+
+  @media screen and (min-width: $tablet) {
+    background-image: url(../images/background-tablet.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/background-tablet@2x.jpg);
+    }
+  }
 
   @media screen and (min-width: $desktop) {
     padding-top: 200px;
     padding-bottom: 200px;
     height: 600px;
+    background-image: url(../images/background-desktop.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/background-desktop@2x.jpg);
+    }
   }
   &__wrapper {
     display: inline-block;
@@ -33,13 +59,13 @@
     margin: 0;
     width: 365px;
     @include font-parameters(26px, 900);
-    margin-bottom: 30px ;
+    margin-bottom: 30px;
     letter-spacing: 1.56px;
 
     @media screen and (min-width: $desktop) {
       @include font-parameters(44px, 900);
       color: #fff;
-      
+
       padding: 0 1em;
       width: 696px;
     }

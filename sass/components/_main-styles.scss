@@ -4,6 +4,7 @@ body {
   font-family: Roboto, Raleway, sans-serif;
   color: $body-color;
   margin: 0;
+  
 }
 
 .section {
@@ -12,12 +13,19 @@ body {
 }
 
 .conteiner {
-  max-width: 450px;
   margin: 0px auto;
-  min-width: 350px ;
+  
+  @media screen and (max-width: $phone) {
+    width: 350px ;
+    box-sizing: content-box;
+  }
+
+  @media screen and (min-width: $phone) {
+    max-width: 450px;
+  }
+
   @media screen and (min-width: $tablet) {
     max-width: 768px;
-    
   }
 
   @media screen and (min-width: $desktop) {

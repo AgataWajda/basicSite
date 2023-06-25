@@ -27,6 +27,7 @@
   background-color: #fff;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
+  display: none ;
 
   &__close {
     position: absolute;
@@ -44,6 +45,7 @@
 }
 .menu-container.is-open {
   transform: translateX(0);
+  display: block;
 }
 
 .mobile-menu {
@@ -82,16 +84,16 @@
     @include font-parameters(18px, 500);
     color: $brand-color;
     display: inline-block;
-    padding-right: 10px ;
+    padding-right: 10px;
 
     &:not(:last-of-type) {
-      border-right-color: rgba(33, 33, 33, 0.2) ;
+      border-right-color: rgba(33, 33, 33, 0.2);
       border-right-style: solid;
       border-right-width: 1px;
     }
 
     &:not(:first-of-type) {
-      padding-left: 10px ;
+      padding-left: 10px;
     }
   }
 }

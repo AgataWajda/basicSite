@@ -7,22 +7,20 @@
 .section-box {
   display: inline;
   height: 120px;
-  
+
   @media screen and (min-width: $tablet) {
     display: inline-block;
-    max-width: 354px ;
-   
+    max-width: 354px;
+
     &:not(:nth-of-type(2n)) {
       margin-right: 30px;
     }
-  
   }
   @media screen and (min-width: $desktop) {
-    max-width: 270px ;
+    max-width: 270px;
     &:not(:last-of-type) {
       margin-right: 30px;
     }
-  
   }
 
   &__icon-box {
@@ -30,31 +28,32 @@
     box-sizing: border-box;
     height: 120px;
     margin-bottom: 30px;
-    padding-top: 25px ;
+    padding-top: 25px;
     text-align: center;
     border-radius: 4px;
-    margin-top: 30px ;
-    
-    @media screen and (max-width: $tablet){
+    margin-top: 30px;
+    width: 100%;
+
+    @media screen and (max-width: $tablet) {
       margin-top: 0px;
-     
-      &:nth-of-type(n + 2)
-      {
-        margin-top: 30px ;
+
+      &:nth-of-type(n + 2) {
+        margin-top: 30px;
       }
     }
 
     @media screen and (min-width: $desktop) {
-      margin-top: 0px ;
+      margin-top: 0px;
     }
   }
 
   &__subtitle {
     @include font-parameters(14px, 700);
     margin: 0px;
+    text-align: center;
 
-    @media screen and (max-width: $phone){
-      text-align: center;
+    @media screen and (min-width: $tablet) {
+      text-align: left;
     }
   }
 
@@ -63,7 +62,9 @@
     color: $bright-color;
     margin-bottom: 0px;
     line-height: 1.46;
-
-  
+    margin-top: 10px;
+    &:not(:last-of-type) {
+      margin-bottom: 30px;
+    }
   }
 }
