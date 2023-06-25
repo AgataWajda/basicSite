@@ -9,7 +9,9 @@
 }
 
 .footer-box {
-  @include grid(70px);
+  @media screen and (min-width: $desktop) {
+    @include grid(70px);
+  }
 
   &__contacts {
     list-style: none;
@@ -62,7 +64,6 @@
   }
 
   &__input-mail {
-    @include size(358px, 50px);
     margin-right: 12px;
     box-sizing: border-box;
     padding-left: 16px;
@@ -73,6 +74,9 @@
     border-color: #ffffff4d;
     @include transition(border-color);
     color: #fff;
+    @media screen and (min-width: $desktop) {
+      @include size(358px, 50px);
+    }
 
     &:focus,
     &:hover {

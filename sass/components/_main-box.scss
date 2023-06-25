@@ -1,24 +1,26 @@
 @import "../utils/vars.scss";
 
 .main-box {
-  box-sizing: border-box;
+  height: 400px;
   display: block;
-  background-color: $dark-motive;
+  box-sizing: border-box;
+  text-align: center;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: linear-gradient(
       to bottom,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/background-image.jpg);
-  background-size: 1600px;
+  background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  text-align: center;
-  height: 600px;
 
-  padding-top: 200px;
-  padding-bottom: 200px;
-
+  @media screen and (min-width: $desktop) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    height: 600px;
+  }
   &__wrapper {
     display: inline-block;
   }
@@ -26,10 +28,20 @@
   &__title {
     box-sizing: border-box;
     display: inline-block;
-    padding: 0 1em;
-    @include size(696px, 120px);
-    @include font-parameters(44px, 900);
+    padding: 0;
     color: #fff;
     margin: 0;
+    width: 365px;
+    @include font-parameters(26px, 900);
+    margin-bottom: 30px ;
+    letter-spacing: 1.56px;
+
+    @media screen and (min-width: $desktop) {
+      @include font-parameters(44px, 900);
+      color: #fff;
+      
+      padding: 0 1em;
+      width: 696px;
+    }
   }
 }

@@ -1,6 +1,10 @@
 @import "../utils/vars.scss";
 
 .company-offer {
+ @media screen and (max-width: $desktop){
+  display: none ;
+ }
+ 
   &__list {
     padding-left: 0px;
     margin: 0;
@@ -12,8 +16,10 @@
     box-sizing: border-box;
     max-height: 294px;
 
-    &:not(:last-of-type) {
-      margin-right: 30px;
+    @media screen and (min-width: $desktop) {
+      &:not(:last-of-type) {
+        margin-right: 30px;
+      }
     }
   }
 

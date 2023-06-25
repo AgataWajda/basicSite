@@ -3,14 +3,17 @@
 .menu-toggle {
   background-color: #fff;
   border: none;
-  
+  @include size(40px, 40px);
+  padding: 0;
+  margin: auto 0;
+
   @media screen and (min-width: $tablet) {
     display: none;
   }
 
-  &:hover ,
+  &:hover,
   &:focus {
-    color: $brand-color ;
+    color: $brand-color;
   }
 }
 
@@ -20,7 +23,6 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
   z-index: 999;
   background-color: #fff;
   transform: translateX(100%);
@@ -45,13 +47,75 @@
 }
 
 .mobile-menu {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 48px;
+  margin-bottom: 48px;
+  margin-left: 40px;
+  height: calc(100% - 96px);
+
+  &__phone {
+    color: $brand-color;
+    display: block;
+    text-decoration: none;
+    @include font-parameters(34px, 500);
+    margin-bottom: 32px;
+  }
+
+  &__mail {
+    color: $bright-color;
+    display: block;
+    text-decoration: none;
+    @include font-parameters(24px, 500);
+    margin-bottom: 64px;
+  }
+
+  &__social {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  &__social-link {
+    @include font-parameters(18px, 500);
+    color: $brand-color;
+    display: inline-block;
+    padding-right: 10px ;
+
+    &:not(:last-of-type) {
+      border-right-color: rgba(33, 33, 33, 0.2) ;
+      border-right-style: solid;
+      border-right-width: 1px;
+    }
+
+    &:not(:first-of-type) {
+      padding-left: 10px ;
+    }
+  }
 }
 
-.mobile-menu .link {
-  display: block;
-  padding: 10px;
-  text-decoration: none;
+.mobile-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  &__item {
+    &:not(:last-of-type) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__link {
+    @include font-parameters(40px, 500);
+    text-decoration: none;
+    @include transition(color);
+    color: $body-color;
+
+    &:hover,
+    &:focus {
+      color: $brand-color;
+    }
+  }
 }
