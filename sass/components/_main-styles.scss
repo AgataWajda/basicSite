@@ -8,8 +8,13 @@ body {
 }
 
 .section {
+  padding-top: 60px ;
+  padding-bottom: 60px ;
+
+  @media screen and (min-width: $desktop) {
   padding-top: 94px;
   padding-bottom: 94px;
+  }
 }
 
 .conteiner {
@@ -45,9 +50,14 @@ body {
 }
 
 .section-title {
-  @include font-parameters(36px, 700);
   text-align: center;
-  padding-bottom: 50px;
   margin-bottom: 0px;
   margin-top: 0px;
+  padding-bottom: 30px ;
+  @include font-parameters(28px, 700);
+
+ @media screen and (min-width: $desktop) {
+  @include font-parameters(36px, 700);
+  padding-bottom: 50px;
+ }
 }
