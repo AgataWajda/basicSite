@@ -1,7 +1,6 @@
 @import "../utils/vars.scss";
 
 .article {
-  
   @media screen and (min-width: $desktop) {
     padding-bottom: 94px;
   }
@@ -10,12 +9,8 @@
 .section-box {
   display: inline-block;
   height: 120px;
-  
-  @media screen and (max-width: $tablet) {
-  &:not(:first-of-type) {
-    margin-top: 30px;
-  }
-}
+  margin-right: 0;
+
   @media screen and (min-width: $tablet) {
     display: inline-block;
     max-width: 354px;
@@ -26,7 +21,7 @@
   }
   @media screen and (min-width: $desktop) {
     max-width: 270px;
-    
+
     &:not(:last-of-type) {
       margin-right: 30px;
     }

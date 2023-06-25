@@ -4,24 +4,23 @@ body {
   font-family: Roboto, Raleway, sans-serif;
   color: $body-color;
   margin: 0;
-  
 }
 
 .section {
-  padding-top: 60px ;
-  padding-bottom: 60px ;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   @media screen and (min-width: $desktop) {
-  padding-top: 94px;
-  padding-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
 .conteiner {
   margin: 0px auto;
-  
+
   @media screen and (max-width: $phone) {
-    width: 350px ;
+    width: 320px;
     box-sizing: content-box;
   }
 
@@ -53,11 +52,11 @@ body {
   text-align: center;
   margin-bottom: 0px;
   margin-top: 0px;
-  padding-bottom: 30px ;
+  padding-bottom: 30px;
   @include font-parameters(28px, 700);
 
- @media screen and (min-width: $desktop) {
-  @include font-parameters(36px, 700);
-  padding-bottom: 50px;
- }
+  @media screen and (min-width: $desktop) {
+    @include font-parameters(36px, 700);
+    padding-bottom: 50px;
+  }
 }
