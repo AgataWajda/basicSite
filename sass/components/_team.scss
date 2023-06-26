@@ -33,7 +33,7 @@
   }
 
   @media screen and (min-width: $desktop) {
-    @include size(270px, 428px);
+    @include size(270px, 438px);
   }
   &:not(:last-of-type) {
     margin-bottom: 30px;
@@ -109,5 +109,8 @@
 
   &__image {
     width: 100%;
+    @media screen and (min-width: $desktop) {
+      height: 270px;
+    }
   }
 }
