@@ -44,6 +44,19 @@
       }
     }
 
+    @media screen and (min-width: $tablet) {
+      @include size(226px, 92px);
+      padding: 16px 60px;
+
+      &:nth-of-type(3n) {
+        margin-right: 0;
+      }
+
+      &:not(:nth-of-type(3n)) {
+        margin-right: 30px;
+      }
+    }
+
     @media screen and (min-width: $desktop) {
       width: 170px;
       margin-bottom: 0px;

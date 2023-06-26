@@ -17,10 +17,17 @@
 
     @media screen and (max-width: $tablet) {
       height: 60px;
-      
+    }
+
+    @media screen and (min-width: $tablet) {
+      height: 80px;
+      margin-left: 0;
+      margin-right: 0;
+      gap: 83px;
     }
 
     @media screen and (min-width: $desktop) {
+      height: auto;
       gap: 93px;
       flex-direction: row;
       margin: 0px;
@@ -33,11 +40,15 @@
   }
 
   &__links {
-    @include grid(40px);
+    @include grid(60px);
     width: 254px;
     margin-bottom: 0px;
     margin-top: 0px;
     justify-content: space-between;
+
+    @media screen and (min-width: $desktop) {
+      @include grid(40px);
+    }
   }
 
   &__icon {
@@ -47,8 +58,14 @@
 
   &__aside {
     display: flex;
-    gap: 30px;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px ;
+    @media screen and (min-width: $desktop) {
+      flex-direction: row;
+      gap: 30px;
+      align-items: center;
+    }
   }
 
   &__contact-link {
@@ -95,6 +112,10 @@
 
   @media screen and (min-width: $tablet) {
     display: flex;
+    gap: 101px;
+  }
+
+  @media screen and (min-width: $desktop) {
     gap: 345px;
   }
 }

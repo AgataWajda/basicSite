@@ -23,6 +23,15 @@
     @include size(450px, 622px);
   }
 
+  @media screen and (min-width: $tablet) {
+    @include size(354px, 536px);
+
+    display: inline-block;
+    &:nth-of-type(odd) {
+      margin-right: 30px;
+    }
+  }
+
   @media screen and (min-width: $desktop) {
     @include size(270px, 428px);
   }
@@ -40,7 +49,15 @@
 
   &__item {
     margin: 0;
-    height: 428px;
+    height: 460px;
+
+    @media screen and (min-width: $tablet) {
+      height: 374px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      height: 428px;
+    }
   }
 
   &__description {
