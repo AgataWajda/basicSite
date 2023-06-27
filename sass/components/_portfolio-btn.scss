@@ -6,6 +6,13 @@
   padding-bottom: 50px;
   padding-left: 0px;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px 8px;
+
+  @media screen and (min-width: $tablet) {
+    justify-content: center;
+  }
 
   &__btn {
     @include size(121px, 38px);
@@ -29,10 +36,6 @@
       background-color: $brand-color;
       box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
         0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
-    }
-
-    &:not(:last-of-type) {
-      margin-right: 8px;
     }
   }
 }

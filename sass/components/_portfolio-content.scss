@@ -6,26 +6,34 @@
   &__products {
     margin: 0px;
     padding-left: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px 30px;
   }
 
   &__product {
     display: inline-block;
-    @include size(370px, 404px);
     margin-top: 0px;
-
-    &:not(:nth-of-type(3n)) {
-      margin-right: 30px;
-    }
-
-    &:nth-of-type(n + 4) {
-      margin-top: 30px;
-    }
   }
 }
 
 .product__box {
   margin: 0px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 320px;
+
+  @media screen and (min-width: $phone) {
+    @include size(450px, 404px);
+  }
+
+  @media screen and (min-width: $tablet) {
+    @include size(354px, 404px);
+  }
+
+  @media screen and (min-width: $desktop) {
+    @include size(370px, 404px);
+  }
 
   &:hover,
   &:focus {
@@ -82,5 +90,13 @@
     line-height: 1.6;
     text-align: left;
     margin: 0px;
+  }
+
+  &__image {
+    width: 100%;
+    @media screen and (min-width: 320px) and (max-width: $phone) {
+      width: 320px;
+      height: 244 px;
+    }
   }
 }
