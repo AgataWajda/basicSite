@@ -1,160 +1,181 @@
 @import "../utils/vars.scss";
 
 .page-footer {
-  box-sizing: border-box;
-  background-color: #2f303a;
+	box-sizing: border-box;
+	background-color: #2f303a;
 
-  padding-top: 60px;
-  padding-bottom: 60px;
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
 
 .footer-box {
-  @media screen and (min-width: $tablet) {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 60px 144px;
+	@media screen and (min-width: $tablet) {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 60px 144px;
 
-    justify-content: center;
-  }
+		justify-content: center;
+	}
 
-  @media screen and (min-width: $desktop) {
-    @include grid(70px);
-  }
+	@media screen and (min-width: $desktop) {
+		@include grid(70px);
+	}
 
-  &__contacts {
-    list-style: none;
-    padding-left: 0px;
-    margin-top: 20px;
-    margin-bottom: 0px;
-  }
+	&__contacts {
+		list-style: none;
+		padding-left: 0px;
+		margin-top: 20px;
+		margin-bottom: 0px;
+	}
 
-  &__adress {
-    @include font-parameters(14px, 400);
-    color: #fff;
-    font-style: normal;
-    text-align: center;
-    margin-bottom: 60px;
+	&__adress {
+		@include font-parameters(14px, 400);
+		color: #fff;
+		font-style: normal;
+		text-align: center;
+		margin-bottom: 60px;
 
-    @media screen and (min-width: $tablet) {
-      margin-bottom: 0;
-    }
+		@media screen and (min-width: $tablet) {
+			margin-bottom: 0;
+		}
 
-    @media screen and (min-width: $desktop) {
-      text-align: left;
-      margin-bottom: 9px;
-    }
-  }
+		@media screen and (min-width: $desktop) {
+			text-align: left;
+			margin-bottom: 9px;
+		}
+	}
 
-  &__item {
-    margin-bottom: 9px;
-  }
+	&__item {
+		margin-bottom: 9px;
+	}
 
-  &__mail {
-    margin-bottom: 9px;
-  }
+	&__mail {
+		margin-bottom: 9px;
+	}
 
-  &__link {
-    @include font-parameters(14px, 400);
-    color: #ffffff99;
-    text-decoration: none;
-  }
+	&__link {
+		@include font-parameters(14px, 400);
+		color: #ffffff99;
+		text-decoration: none;
+	}
 
-  &__text {
-    color: #fff;
-    @include font-parameters(14px, 700);
-    margin-top: 0px;
-    margin-bottom: 20px;
-    padding-top: 12px;
-    text-align: center;
+	&__text {
+		color: #fff;
+		@include font-parameters(14px, 700);
+		margin-top: 0px;
+		margin-bottom: 20px;
+		padding-top: 12px;
+		text-align: center;
 
-    @media screen and (min-width: $desktop) {
-      text-align: left;
-    }
-  }
+		@media screen and (min-width: $desktop) {
+			text-align: left;
+		}
+	}
 
-  &__social {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 60px;
-  }
+	&__social {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 60px;
+	}
 
-  &__icon-box {
-    display: inline-block;
-    box-sizing: border-box;
-    @extend %social-media-icon;
-    @include transition(background-color);
-    padding: 12px;
-    color: #fff;
-    background-color: rgba(255, 255, 255, 0.1);
+	&__icon-box {
+		display: inline-block;
+		box-sizing: border-box;
+		@extend %social-media-icon;
+		@include transition(background-color);
+		padding: 12px;
+		color: #fff;
+		background-color: rgba(255, 255, 255, 0.1);
 
-    &:not(:last-of-type) {
-      margin-right: 10px;
-    }
+		&:not(:last-of-type) {
+			margin-right: 10px;
+		}
 
-    &:hover,
-    &:focus {
-      background-color: $brand-color;
-    }
-  }
+		&:hover,
+		&:focus {
+			background-color: $brand-color;
+		}
+	}
 
-  &__input-mail {
-    margin-right: 12px;
-    box-sizing: border-box;
-    padding-left: 16px;
-    background-color: $dark-motive;
-    border-style: solid;
-    border-radius: 4px;
-    box-shadow: 0px 4px 4px 0px #00000026;
-    border-color: #ffffff4d;
-    @include transition(border-color);
-    color: #fff;
-    width: 100%;
-    height: 50px;
-    margin-bottom: 20px;
-    margin-right: 0px;
-    @media screen and (min-width: $tablet) {
-      @include size(450px, 50px);
-      margin-left: calc((100% - 450px) / 2);
-    }
+	&__input-mail {
+		margin-right: 12px;
+		box-sizing: border-box;
+		padding-left: 16px;
+		background-color: $dark-motive;
+		border-style: solid;
+		border-radius: 4px;
+		box-shadow: 0px 4px 4px 0px #00000026;
+		border-color: #ffffff4d;
+		@include transition(border-color);
+		color: #fff;
+		width: 100%;
+		height: 50px;
+		margin-bottom: 20px;
+		margin-right: 0px;
+		@media screen and (min-width: $tablet) {
+			@include size(450px, 50px);
+			margin-left: calc((100% - 450px) / 2);
+		}
 
-    @media screen and (min-width: $desktop) {
-      @include size(358px, 50px);
-      margin-left: 0px;
-      margin-bottom: 0;
-      margin-right: 12px;
-    }
+		@media screen and (min-width: $desktop) {
+			@include size(358px, 50px);
+			margin-left: 0px;
+			margin-bottom: 0;
+			margin-right: 12px;
+		}
 
-    &:focus,
-    &:hover {
-      color: #fff;
-      outline: none;
-      border-color: $brand-color;
-    }
-  }
-  &__submit {
-    @extend %brand-button;
-    margin-left: calc((100% - 200px) / 2);
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 46px;
-    display: inline-flex;
-    gap: 24px;
-    align-items: center;
+		&:focus,
+		&:hover {
+			color: #fff;
+			outline: none;
+			border-color: $brand-color;
+		}
+	}
 
-    @media screen and (min-width: $desktop) {
-      margin-left: 0;
-    }
-  }
+	&__form {
+		position: relative;
+	}
 
-  &__sumbit-text {
-    display: inline;
-    @include font-parameters(16px, 700);
-    color: #fff;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
+	&__submit {
+		@extend %brand-button;
 
-  &__btn-icon {
-    fill: #fff;
-  }
+		margin-left: calc((100% - 200px) / 2);
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 46px;
+		display: inline-flex;
+		gap: 24px;
+		align-items: center;
+
+		@media screen and (min-width: $desktop) {
+			margin-left: 0;
+		}
+	}
+
+	&__sumbit-text {
+		display: inline;
+		@include font-parameters(16px, 700);
+		color: #fff;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	&__btn-icon {
+		fill: #fff;
+	}
+
+	&__info {
+		position: absolute;
+		top: 200px;
+		left: calc((100% - 80px) / 2);
+		color: #fff;
+		font-size: 14px;
+		font-weight: 400;
+		transition-duration: 1000ms;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		@media screen and (min-width: $desktop) {
+			top: 115px;
+			left: 5px;
+		}
+	}
 }
