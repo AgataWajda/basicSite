@@ -1,4 +1,4 @@
-export const portfolioItems = [
+const portfolioItems = [
 	{
 		company: "Technocrack",
 		image: "images/technocrack.jpg",
@@ -79,3 +79,5 @@ export const portfolioItems = [
 		type: "Aplikacja",
 	},
 ];
+
+export { portfolioItems };
