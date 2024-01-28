@@ -1,4 +1,4 @@
-import { portfolioItems } from "/js/portfolioData.js";
+import { portfolioItems } from "./portfolioData";
 
 const portfolio = document.querySelector(".portfolio-content__products");
 
