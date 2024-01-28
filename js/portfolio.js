@@ -5,12 +5,43 @@ const portfolio = document.querySelector(".portfolio-content__products");
 const allCategory = document.querySelector("#all");
 const pagesCategory = document.querySelector("#pages");
 const aplicationCategory = document.querySelector("#aplication");
-const deisgnCategory = document.querySelector("#deisgn");
+const designCategory = document.querySelector("#design");
 const marketingCategory = document.querySelector("#marketing");
 
-const createAllCategories = (portfolioItems) => {
+const createAllCategories = (portfolioItems, category) => {
+	let portfolioItemsFilter;
+
+	switch (category) {
+		case "all":
+			portfolioItemsFilter = portfolioItems;
+			break;
+		case "pages":
+			portfolioItemsFilter = portfolioItems.filter(
+				(item) => item.type === "Strona internetowa"
+			);
+			break;
+		case "aplication":
+			portfolioItemsFilter = portfolioItems.filter(
+				(item) => item.type === "Aplikacja"
+			);
+			break;
+		case "design":
+			portfolioItemsFilter = portfolioItems.filter(
+				(item) => item.type === "Design"
+			);
+			break;
+		case "marketing":
+			portfolioItemsFilter = portfolioItems.filter(
+				(item) => item.type === "Marketing"
+			);
+			break;
+		default:
+			portfolioItemsFilter = portfolioItems;
+			break;
+	}
+
 	const markup = `
-      ${portfolioItems
+      ${portfolioItemsFilter
 				.map((item) => {
 					return `
           <li class="portfolio-content__product product">
@@ -41,3 +72,22 @@ const createAllCategories = (portfolioItems) => {
 };
 
 createAllCategories(portfolioItems);
+
+allCategory.addEventListener("click", () =>
+	createAllCategories(portfolioItems, "all")
+);
+
+pagesCategory.addEventListener("click", () =>
+	createAllCategories(portfolioItems, "pages")
+);
+
+aplicationCategory.addEventListener("click", () =>
+	createAllCategories(portfolioItems, "aplication")
+);
+
+designCategory.addEventListener("click", () =>
+	createAllCategories(portfolioItems, "design")
+);
+marketingCategory.addEventListener("click", () =>
+	createAllCategories(portfolioItems, "marketing")
+);
