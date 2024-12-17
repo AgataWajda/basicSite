@@ -1,121 +1,161 @@
 @import "../utils/vars.scss";
 
 .page-header {
-  border-bottom: 1px solid #ececec;
+	background-color: $background-light;
+	border-bottom: 1px solid #ececec;
 
-  @media screen and (min-width: $desktop) {
-    height: 31px;
-    padding-bottom: 25px;
-    padding-top: 24px;
-    border-bottom: 1px solid #ececec;
-  }
-  &__wrapper {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 15px;
-    margin-right: 15px;
+	@media screen and (min-width: $desktop) {
+		height: 31px;
+		padding-bottom: 25px;
+		padding-top: 24px;
+		border-bottom: 1px solid #ececec;
+	}
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		margin-left: 15px;
+		margin-right: 15px;
 
-    @media screen and (max-width: $tablet) {
-      height: 60px;
-    }
+		@media screen and (max-width: $tablet) {
+			height: 60px;
+		}
 
-    @media screen and (min-width: $tablet) {
-      height: 80px;
-      margin-left: 0;
-      margin-right: 0;
-      gap: 83px;
-    }
+		@media screen and (min-width: $tablet) {
+			height: 80px;
+			margin: 0;
+			padding: 5px 20px;
+			gap: 83px;
+		}
 
-    @media screen and (min-width: $desktop) {
-      height: auto;
-      gap: 93px;
-      flex-direction: row;
-      margin: 0px;
-    }
-  }
+		@media screen and (min-width: $desktop) {
+			height: auto;
+			padding: 0 25px;
+			gap: 93px;
+			flex-direction: row;
+			margin: 0px;
+		}
+	}
 
-  &__nav {
-    display: flex;
-    align-items: center;
-  }
+	&__logo {
+		position: relative;
+		transition: scale 0.5s;
+	}
 
-  &__links {
-    @include grid(60px);
-    width: 254px;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    justify-content: space-between;
+	&__logo::after {
+		content: "";
+		position: absolute;
+		bottom: -5px;
+		left: 53px;
+		width: 94px;
+		height: 3px;
+		background-color: $brand-color;
+		transform: scaleX(0);
+		transform-origin: right;
+		transition: transform 0.5s;
+	}
 
-    @media screen and (min-width: $desktop) {
-      @include grid(40px);
-    }
-  }
+	&__logo:hover::after {
+		transform: scaleX(1);
+		transform-origin: left;
+	}
 
-  &__icon {
-    fill: currentColor;
-    margin-right: 10px;
-  }
+	&__nav {
+		display: flex;
+		align-items: center;
+	}
 
-  &__aside {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px ;
-    @media screen and (min-width: $desktop) {
-      flex-direction: row;
-      gap: 30px;
-      align-items: center;
-    }
-  }
+	&__links {
+		@include grid(60px);
+		width: 254px;
+		margin-bottom: 0px;
+		margin-top: 0px;
+		justify-content: space-between;
 
-  &__contact-link {
-    @include font-parameters(14px, 500);
-    @include transition(color);
-    color: $bright-color;
-    text-decoration: none;
+		@media screen and (min-width: $desktop) {
+			@include grid(40px);
+		}
+	}
 
-    &:hover,
-    &:focus {
-      color: $brand-color;
-    }
-  }
+	&__icon {
+		fill: currentColor;
+		margin-right: 10px;
+	}
+
+	&__aside {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 10px;
+		@media screen and (min-width: $desktop) {
+			flex-direction: row;
+			gap: 30px;
+			align-items: center;
+		}
+	}
+
+	&__contact-link {
+		position: relative;
+		@include font-parameters(14px, 500);
+		color: $bright-color;
+		text-decoration: none;
+	}
 }
 
-.main-links__link {
-  @include transition(color);
-  @include font-parameters(14px, 500);
-  text-decoration: none;
-  color: $body-color;
-
-  &:hover,
-  &:focus {
-    color: $brand-color;
-  }
+.main-links {
+	&__link {
+		@include transition(color);
+		@include font-parameters(14px, 500);
+		text-decoration: none;
+		color: $body-color;
+	}
+	&__item {
+		position: relative;
+	}
 }
 
-.current-page {
-  position: relative;
-  &:after {
-    content: "";
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 4px;
-    background-color: $brand-color;
-    top: 30px;
-    border-radius: 2px;
-  }
+.styled-link::before,
+.styled-link::after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	transition: width 0.5s, height 0.5s;
+}
+
+.styled-link::before {
+	top: -5px;
+	right: -10px;
+	border-top: 0 solid $brand-color;
+	border-right: 0 solid $brand-color;
+}
+
+.styled-link:after {
+	bottom: -5px;
+	left: -10px;
+	border-bottom: 0 solid $brand-color;
+	border-left: 0 solid $brand-color;
+}
+
+.styled-link:hover::before,
+.styled-link:hover::after {
+	width: 20px;
+	height: 15px;
+	border-width: 2px;
+}
+
+.current-page a {
+	color: $brand-color;
 }
 
 .menu {
-  display: none;
+	display: none;
 
-  @media screen and (min-width: $tablet) {
-    display: flex;
-    gap: 101px;
-  }
+	@media screen and (min-width: $tablet) {
+		display: flex;
+		gap: 101px;
+	}
 
-  @media screen and (min-width: $desktop) {
-    gap: 345px;
-  }
+	@media screen and (min-width: $desktop) {
+		gap: 345px;
+	}
 }

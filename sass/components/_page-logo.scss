@@ -1,31 +1,31 @@
 @import "../utils/vars.scss";
 
 .page-header__logo {
-  color: #000;
-  text-decoration: none;
-  display: inline;
-  @media screen and (max-width: $desktop) {
-    margin: auto 0;
-  }
+	color: #000;
+	text-decoration: none;
+	display: inline;
+	@media screen and (max-width: $desktop) {
+		margin: auto 0;
+	}
 }
 
 .footer-box__logo {
-  color: #fff;
-  text-decoration: none;
-  font-style: normal;
+	color: #fff;
+	text-decoration: none;
+	font-style: normal;
 }
 
 .main-logo {
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 24px;
-  font-family: Raleway, sans-serif;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 24px;
+	font-family: Raleway, sans-serif;
 
-  @media screen and (min-width: $desktop) {
-    font-size: 26px;
-  }
+	@media screen and (min-width: $desktop) {
+		font-size: 26px;
+	}
 }
 
 .main-logo--accent {
-  color: $brand-color;
+	color: $brand-color;
 }

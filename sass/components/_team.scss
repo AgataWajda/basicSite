@@ -1,116 +1,111 @@
 @import "../utils/vars.scss";
 
 .team {
-  background-color: $background-light;
-  margin-bottom: 0px;
+	background-color: $background-light;
+	margin-bottom: 0px;
 
-  &__members {
-    padding-left: 0px;
-    margin: 0px;
-    list-style: none;
-  }
+	&__members {
+		display: flex;
+		padding: 0;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		list-style: none;
+	}
 }
 
 .member-box {
-  background-color: #fff;
-  border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  margin: 0 auto;
-  height: 520px;
+	margin-bottom: 40px;
+	background-color: #fff;
+	border-radius: 0px 0px 4px 4px;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+		0px 2px 1px rgba(0, 0, 0, 0.2);
+	height: 520px;
 
-  @media screen and (min-width: $phone) {
-    @include size(450px, 622px);
-  }
+	@media screen and (min-width: $phone) {
+		@include size(450px, 622px);
+	}
 
-  @media screen and (min-width: $tablet) {
-    @include size(354px, 536px);
+	@media screen and (min-width: $tablet) {
+		@include size(354px, 536px);
+		display: inline-block;
+	}
 
-    display: inline-block;
-    &:nth-of-type(odd) {
-      margin-right: 30px;
-    }
-  }
+	@media screen and (min-width: $desktop) {
+		@include size(270px, 438px);
+	}
 
-  @media screen and (min-width: $desktop) {
-    @include size(270px, 438px);
-  }
-  &:not(:last-of-type) {
-    margin-bottom: 30px;
-  }
+	@media screen and (min-width: $desktop) {
+		display: inline-block;
+		&:not(:last-of-type) {
+			margin-right: 30px;
+			margin-bottom: 0px;
+		}
+	}
 
-  @media screen and (min-width: $desktop) {
-    display: inline-block;
-    &:not(:last-of-type) {
-      margin-right: 30px;
-      margin-bottom: 0px;
-    }
-  }
+	&__item {
+		margin: 0;
+		height: 460px;
 
-  &__item {
-    margin: 0;
-    height: 460px;
+		@media screen and (min-width: $tablet) {
+			height: 374px;
+		}
 
-    @media screen and (min-width: $tablet) {
-      height: 374px;
-    }
+		@media screen and (min-width: $desktop) {
+			height: 428px;
+		}
+	}
 
-    @media screen and (min-width: $desktop) {
-      height: 428px;
-    }
-  }
+	&__description {
+		box-sizing: border-box;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
 
-  &__description {
-    box-sizing: border-box;
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
+	&__name {
+		@include font-parameters(16px, 500);
+		text-align: center;
+		margin-bottom: 10px;
+		margin-top: 0px;
+	}
 
-  &__name {
-    @include font-parameters(16px, 500);
-    text-align: center;
-    margin-bottom: 10px;
-    margin-top: 0px;
-  }
+	&__job {
+		text-align: center;
+		@include font-parameters(16px, 400);
+		color: $bright-color;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
 
-  &__job {
-    text-align: center;
-    @include font-parameters(16px, 400);
-    color: $bright-color;
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
+	&__social {
+		display: flex;
+		justify-content: center;
+		margin-top: 16px;
+	}
 
-  &__social {
-    display: flex;
-    justify-content: center;
-    margin-top: 16px;
-  }
+	&__icon-box {
+		box-sizing: border-box;
+		display: inline-block;
+		@extend %social-media-icon;
+		color: #afb1b8;
+		padding: 12px;
+		@include transition(color);
+		@include transition(background-color);
 
-  &__icon-box {
-    box-sizing: border-box;
-    display: inline-block;
-    @extend %social-media-icon;
-    color: #afb1b8;
-    padding: 12px;
-    @include transition(color);
-    @include transition(background-color);
+		&:not(:nth-of-type(4n)) {
+			margin-right: 10px;
+		}
 
-    &:not(:nth-of-type(4n)) {
-      margin-right: 10px;
-    }
+		&:hover,
+		&:focus {
+			background-color: $brand-color;
+			color: #fff;
+		}
+	}
 
-    &:hover,
-    &:focus {
-      background-color: $brand-color;
-      color: #fff;
-    }
-  }
-
-  &__image {
-    width: 100%;
-    @media screen and (min-width: $desktop) {
-      height: 270px;
-    }
-  }
+	&__image {
+		width: 100%;
+		@media screen and (min-width: $desktop) {
+			height: 270px;
+		}
+	}
 }

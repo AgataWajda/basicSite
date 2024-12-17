@@ -1,62 +1,66 @@
 @import "../utils/vars.scss";
 
 body {
-  font-family: Roboto, Raleway, sans-serif;
-  color: $body-color;
-  margin: 0;
+	font-family: Roboto, Raleway, sans-serif;
+	color: $body-color;
+	margin: 0;
 }
 
 .section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+	padding-top: 60px;
+	padding-bottom: 60px;
 
-  @media screen and (min-width: $desktop) {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
+	@media screen and (min-width: $desktop) {
+		padding-top: 94px;
+		padding-bottom: 94px;
+	}
 }
 
 .conteiner {
-  margin: 0px auto;
+	margin: 0px auto;
 
-  @media screen and (max-width: $phone) {
-    width: 320px;
-    box-sizing: content-box;
-  }
+	@media screen and (max-width: $phone) {
+		width: 320px;
+		box-sizing: content-box;
+	}
 
-  @media screen and (min-width: $phone) {
-    max-width: 450px;
-  }
+	@media screen and (min-width: $phone) {
+		max-width: 450px;
+	}
 
-  @media screen and (min-width: $tablet) {
-    max-width: 768px;
-  }
+	@media screen and (min-width: $tablet) {
+		max-width: 768px;
+	}
 
-  @media screen and (min-width: $desktop) {
-    max-width: 1200px;
-  }
+	@media screen and (min-width: 992px) {
+		max-width: 992px;
+	}
+
+	@media screen and (min-width: $desktop) {
+		max-width: 1200px;
+	}
 }
 .icon {
-  fill: currentColor;
+	fill: currentColor;
 }
 .button {
-  display: block;
-  margin: auto;
-  font-weight: 700;
-  font-size: 16px;
-  @extend %brand-button;
-  color: #fff;
+	display: block;
+	margin: auto;
+	font-weight: 700;
+	font-size: 16px;
+	@extend %brand-button;
+	color: #fff;
 }
 
 .section-title {
-  text-align: center;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  padding-bottom: 30px;
-  @include font-parameters(28px, 700);
+	text-align: center;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	padding-bottom: 30px;
+	@include font-parameters(28px, 700);
 
-  @media screen and (min-width: $desktop) {
-    @include font-parameters(36px, 700);
-    padding-bottom: 50px;
-  }
+	@media screen and (min-width: $desktop) {
+		@include font-parameters(36px, 700);
+		padding-bottom: 50px;
+	}
 }
