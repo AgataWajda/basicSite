@@ -31,6 +31,10 @@
 			href="https://github.com/sindresorhus/modern-normalize.git"
 			rel="stylesheet"
 		/>
+		<script
+			src="https://kit.fontawesome.com/9d55c04cf7.js"
+			crossorigin="anonymous"
+		></script>
 		<link href="css/main.min.css" rel="stylesheet" />
 		<link href="css/main.min.css.map" rel="stylesheet" />
 		<link
@@ -765,8 +769,11 @@
 		</div>
 
 		<div class="menu-container js-menu-container" id="mobile-menu">
+			<a href="index.html" class="main-logo mobile-menu__logo"
+				><span class="main-logo--accent">Web</span>Studio</a
+			>
 			<button class="menu-toggle js-close-menu menu-container__close">
-				<svg width="40" height="40" class="icon">
+				<svg width="30" height="30" class="icon">
 					<use href="./images/icons.svg#icon-close-black"></use>
 				</svg>
 			</button>
@@ -774,13 +781,19 @@
 				<nav class="mobile-menu__nav">
 					<ul class="mobile-menu__links mobile-links">
 						<li class="mobile-links__item">
-							<a href="index.html" class="mobile-links__link">Agencja</a>
+							<a href="index.html" class="mobile-links__link"
+								><i class="fa-solid fa-users-line"></i> Agencja</a
+							>
 						</li>
 						<li class="mobile-links__item">
-							<a href="portfolio.html" class="mobile-links__link">Portfolio</a>
+							<a href="portfolio.html" class="mobile-links__link"
+								><i class="fa-solid fa-book"></i> Portfolio</a
+							>
 						</li>
 						<li class="mobile-links__item">
-							<a href="./" class="mobile-links__link">Kontakt</a>
+							<a href="./" class="mobile-links__link"
+								><i class="fa-solid fa-envelope"></i> Kontakt</a
+							>
 						</li>
 					</ul>
 				</nav>
@@ -801,6 +814,7 @@
 						<li class="mobile-menu__social-link">LinkedIn</li>
 					</ul>
 				</aside>
+				<div class="mobile-menu__background-img"></div>
 			</div>
 		</div>
 
