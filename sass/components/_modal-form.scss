@@ -1,101 +1,121 @@
 @import "../utils/vars.scss";
 
 .modal-box {
-  &__form {
-    display: flex;
-    flex-direction: column;
-    padding: 0 40px 20px 40px;
-    gap: 10px;
-    font-family: Roboto;
-  }
+	padding: 20px;
+	@extend %background-gradient;
 
-  &__input {
-    border-style: solid;
-    box-sizing: border-box;
-    border-radius: 4px;
-    border-width: 1px;
-    border-color: #21212133;
-    @include size(100%, 100%);
-    padding: 12px 12px 12px 42px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:focus,
-    &:hover {
-      outline: none;
-      border-color: $brand-color;
-    }
-  }
+	@media screen and (min-width: 365px) {
+		padding: 20px 40px;
+	}
 
-  &__icon {
-    position: absolute;
-    top: 11px;
-    left: 12px;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+	@media screen and (min-width: 470px) {
+		padding: 20px 80px;
+	}
 
-  &__label > textarea {
-    font-family: Roboto;
-    @include transition(border-color);
+	&__title {
+		padding: 40px 0 20px;
+	}
 
-    &::placeholder {
-      color: #75757580;
-    }
+	&__form {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
 
-    &:focus,
-    &:hover {
-      outline: none;
-      border-color: $brand-color;
-    }
-  }
+	&__input {
+		box-sizing: border-box;
+		padding: 6px 0 4px 42px;
+		border-style: solid;
+		border-radius: 4px;
+		border-width: 1px;
+		border-color: $bright-color;
+		background-color: transparent;
+		@include size(100%, 100%);
+		transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+		&:focus,
+		&:hover {
+			outline: none;
+			border-color: $brand-color;
+		}
+	}
 
-  &__comment {
-    box-sizing: border-box;
-    padding: 12px 16px;
-    @include size(100%, 120px);
-    resize: none;
-    font-size: 12px;
-    border-width: 1px;
-    border-color: #21212133;
-    border-radius: 4px;
-    margin-bottom: 10px;
-  }
+	&__icon {
+		position: absolute;
+		top: 50%;
+		left: 12px;
+		transform: translateY(-50%);
+		transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	}
 
-  &__statement-box {
-    margin-bottom: 20px;
-  }
+	&__label > textarea {
+		height: 100px;
+		background-color: transparent;
+		border-color: $bright-color;
+		@include transition(border-color);
 
-  &__input-check {
-    appearance: none;
-    display: none;
+		&::placeholder {
+			color: #75757580;
+		}
 
-    &:not(:checked) + .modal-box__checked {
-      @extend %check-hidden;
-    }
+		&:focus,
+		&:hover {
+			outline: none;
+			border-color: $brand-color;
+		}
+	}
 
-    &:not(:checked) ~ .modal-box__not-checked {
-      @extend %check-visible;
-    }
-  }
+	&__comment {
+		box-sizing: border-box;
+		padding: 12px 16px;
+		@include size(100%, 120px);
+		resize: none;
+		font-size: 12px;
+		border-width: 1px;
+		border-color: #21212133;
+		border-radius: 4px;
+		margin-bottom: 10px;
+	}
 
-  &__checked {
-    @extend %check-visible;
-  }
+	&__statement-box {
+		margin-bottom: 20px;
+	}
 
-  &__not-checked {
-    @extend %check-hidden;
-  }
+	&__input-check {
+		appearance: none;
+		display: none;
 
-  &__button {
-    box-shadow: 0 4px 4px #00000026;
-  }
+		&:not(:checked) + .modal-box__checked {
+			@extend %check-hidden;
+		}
+
+		&:not(:checked) ~ .modal-box__not-checked {
+			@extend %check-visible;
+		}
+	}
+
+	&__checked {
+		@extend %check-visible;
+	}
+
+	&__not-checked {
+		@extend %check-hidden;
+	}
+
+	&__button {
+		box-shadow: 0 4px 4px #00000026;
+	}
 }
 
 .statement {
-  color: $bright-color;
-  display: inline;
-  @include font-parameters(14px, 400);
-  margin-left: 4px;
+	color: $bright-color;
+	display: inline;
+	@include font-parameters(12px, 400);
+	margin-left: 4px;
 
-  > a {
-    color: $brand-color;
-  }
+	> a {
+		color: $brand-color;
+	}
+}
+.input-error {
+	fill: #9e3825;
 }

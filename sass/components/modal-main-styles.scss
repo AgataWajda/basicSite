@@ -1,78 +1,77 @@
 @import "../utils/vars.scss";
 
 .backdrop {
-  position: fixed;
-  display: flex;
-  @include size(100%, 100%);
-  background-color: #00000033;
-  top: 0;
-  left: 0;
-  justify-content: center;
-  align-items: center;
-  transition-duration: 1000ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	position: fixed;
+	display: flex;
+	@include size(100%, 100%);
+	background-color: #00000077;
+	top: 0;
+	left: 0;
+	justify-content: center;
+	align-items: center;
+	transition-duration: 1000ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
+	visibility: hidden;
+	opacity: 0;
+	pointer-events: none;
 
-  .modal-box {
-    transform: scale(0);
-  }
+	.modal-box {
+		transform: scale(0);
+	}
 }
 
 .modal-box {
-  @include size(528px, 581px);
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  background-color: #fff;
-  margin: auto;
-  border-radius: 4px;
-  box-shadow: 0 2px 1px #00000033, 0 1px 1px #00000024, 0 1px 3px #0000001f;
-  transform: scale(1);
-  transition-duration: 1000ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	@include size(528px, 581px);
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	background-color: #fff;
+	margin: auto;
+	border-radius: 4px;
+	box-shadow: 0 2px 1px #00000033, 0 1px 1px #00000024, 0 1px 3px #0000001f;
+	transform: scale(1);
+	transition-duration: 1000ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  &__text {
-    margin-top: 0;
-    margin-bottom: 4px;
-    @include font-parameters(12px, 400);
-    color: $bright-color;
-  }
+	&__text {
+		margin-top: 0;
+		margin-bottom: 4px;
+		@include font-parameters(12px, 400);
+		color: $bright-color;
+	}
 
-  &__input-box {
-    display: inline-block;
-    box-sizing: border-box;
-    width: 100%;
-    position: relative;
+	&__input-box {
+		display: inline-block;
+		box-sizing: border-box;
+		width: 100%;
+		position: relative;
 
-    &:focus-within {
-      fill: $brand-color;
-    }
-  }
+		&:focus-within {
+			fill: $brand-color;
+		}
+	}
 
-  &__close {
-    display: inline-block;
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    @include size(30px, 30px);
-    border-radius: 50%;
-    border: 1px solid #0000001a;
-    background-color: #fff;
-    padding: 6px;
-    cursor: pointer;
-  }
+	&__close {
+		display: inline-block;
+		position: absolute;
+		top: 8px;
+		right: 20px;
+		@include size(30px, 30px);
+		border: none;
+		background-color: transparent;
+		padding: 6px;
+		cursor: pointer;
+	}
 
-  &__title {
-    @include font-parameters(20px, 700);
-    text-align: center;
-    margin: 0px;
-    padding-top: 40px;
-    padding-bottom: 12px;
-  }
+	&__title {
+		@include font-parameters(20px, 700);
+		text-align: center;
+		margin: 0px;
+		padding-top: 40px;
+		padding-bottom: 12px;
+	}
 }

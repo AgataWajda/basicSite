@@ -3,26 +3,31 @@
 .article {
 	display: flex;
 	flex-wrap: wrap;
+	padding-top: 30px;
 	justify-content: center;
 
+	@media screen and (min-width: $tablet) {
+		gap: 30px;
+	}
+
 	@media screen and (min-width: $desktop) {
+		gap: 0;
 		padding-bottom: 94px;
 	}
 }
 
 .section-box {
 	display: inline-block;
-
+	padding: 0 20px 30px;
 	margin-right: 0;
+	background-color: $dark-motive;
+	border-radius: 5px;
 
 	@media screen and (min-width: $tablet) {
 		display: inline-block;
 		max-width: 354px;
+		padding: 0;
 		margin-top: 0;
-
-		&:not(:nth-of-type(2n)) {
-			margin-right: 30px;
-		}
 	}
 
 	@media screen and (min-width: $desktop) {
@@ -34,6 +39,7 @@
 	}
 
 	&__icon-box {
+		position: relative;
 		background-color: $background-light;
 		box-sizing: border-box;
 		height: 120px;
@@ -41,7 +47,7 @@
 		padding-top: 25px;
 		text-align: center;
 		border-radius: 4px;
-		margin-top: 30px;
+
 		width: 100%;
 
 		@media screen and (max-width: $tablet) {
@@ -57,21 +63,41 @@
 		}
 	}
 
+	&__icon-box::before,
+	&__icon-box::after {
+		content: "";
+		position: absolute;
+		width: 20px;
+		height: 15px;
+		border-width: 2px;
+		transition: width 0.5s, height 0.5s;
+	}
+
+	&__icon-box::before {
+		top: 0px;
+		right: 0px;
+		border-top: 3px solid $brand-color;
+		border-right: 3px solid $brand-color;
+	}
+
+	&__icon-box:after {
+		bottom: 0px;
+		left: 0px;
+		border-bottom: 3px solid $brand-color;
+		border-left: 3px solid $brand-color;
+	}
+
 	&__subtitle {
 		@include font-parameters(14px, 700);
-		margin: 0px;
+		margin: 0 auto;
+		color: #fff;
 		text-align: center;
-
-		@media screen and (min-width: $tablet) {
-			text-align: left;
-		}
 	}
 
 	&__text {
 		@include font-parameters(14px, 400);
+		margin: 20px;
 		color: $bright-color;
-		margin-bottom: 0px;
 		line-height: 1.46;
-		margin-top: 10px;
 	}
 }

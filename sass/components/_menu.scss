@@ -24,12 +24,7 @@
 	width: 100vw;
 	height: 100vh;
 	z-index: 999;
-	background: rgb(245, 244, 250);
-	background: linear-gradient(
-		184deg,
-		rgba(245, 244, 250, 1) 0%,
-		rgb(206, 210, 213) 80%
-	);
+	@extend %background-gradient;
 	transform: scale(0) translate(-100px, 100px);
 	visibility: hidden;
 	opacity: 0;

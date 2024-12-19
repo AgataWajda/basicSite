@@ -3,56 +3,72 @@ $brand-color: #2196f3;
 $bright-color: #757575;
 $dark-motive: #2f303a;
 $background-light: #f5f4fa;
-$tablet : 768px ;
-$phone: 480px ;
-$desktop: 1200px ;
+$tablet: 768px;
+$phone: 480px;
+$desktop: 1200px;
+
+%background-gradient {
+	background: rgb(245, 244, 250);
+	background: linear-gradient(
+		184deg,
+		rgba(245, 244, 250, 1) 0%,
+		rgb(206, 210, 213) 80%
+	);
+}
 
 %social-media-icon {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
 }
 
 %brand-button {
-  height: 50px;
-  width: 200px;
-  background-color: $brand-color;
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
+	height: 30px;
+	width: 150px;
+	font-size: 14px;
+	background-color: $brand-color;
+	border-radius: 4px;
+	border: none;
+	cursor: pointer;
+
+	@media screen and (min-width: 365px) {
+		height: 50px;
+		width: 200px;
+		font-size: 16px;
+	}
 }
 
 %check-hidden {
-  visibility: hidden;
-  display: none;
+	visibility: hidden;
+	display: none;
 }
 
 %check-visible {
-  visibility: visible;
-  display: inline;
-  cursor: pointer;
+	visibility: visible;
+	display: inline;
+	cursor: pointer;
 }
 
 @mixin size($width, $height) {
-  height: $height;
-  width: $width;
-  box-sizing: border-box;
+	height: $height;
+	width: $width;
+	box-sizing: border-box;
 }
 
 @mixin grid($gap) {
-  display: flex;
-  gap: $gap;
-  padding-left: 0px;
-  list-style: none;
+	display: flex;
+	gap: $gap;
+	padding-left: 0px;
+	list-style: none;
 }
 
 @mixin transition($property) {
-  transition-property: $property;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-property: $property;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @mixin font-parameters($size, $weight) {
-  font-size: $size;
-  font-weight: $weight;
+	font-size: $size;
+	font-weight: $weight;
 }

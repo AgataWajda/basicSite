@@ -53,9 +53,11 @@ body {
 }
 
 .section-title {
+	position: relative;
+	display: block;
+	width: fit-content;
 	text-align: center;
-	margin-bottom: 0px;
-	margin-top: 0px;
+	margin: 0 auto;
 	padding-bottom: 30px;
 	@include font-parameters(28px, 700);
 
@@ -63,4 +65,24 @@ body {
 		@include font-parameters(36px, 700);
 		padding-bottom: 50px;
 	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: 20px;
+		left: 50%;
+		width: 80%;
+		height: 3px;
+		background-color: $brand-color;
+		border-radius: 5px;
+		transform: translateX(-50%);
+
+		@media screen and (min-width: $desktop) {
+			bottom: 30px;
+		}
+	}
+}
+
+.background-grey {
+	background-color: rgb(252, 252, 252);
 }
