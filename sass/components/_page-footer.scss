@@ -138,14 +138,15 @@
 
 	&__submit {
 		@extend %brand-button;
-
 		margin-left: calc((100% - 200px) / 2);
-		padding-top: 10px;
-		padding-bottom: 10px;
-		padding-left: 46px;
 		display: inline-flex;
-		gap: 24px;
 		align-items: center;
+		justify-content: center;
+		gap: 5px;
+
+		@media screen and (min-width: 366px) {
+			gap: 25px;
+		}
 
 		@media screen and (min-width: $desktop) {
 			margin-left: 0;

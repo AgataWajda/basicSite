@@ -1,11 +1,13 @@
 @import "../utils/vars.scss";
 
 .menu-toggle {
+	position: relative;
 	background-color: $background-light;
 	border: none;
 	@include size(40px, 40px);
 	padding: 0;
 	margin: auto 0;
+	z-index: 99;
 
 	@media screen and (min-width: $tablet) {
 		display: none;
@@ -24,7 +26,6 @@
 	width: 100vw;
 	height: 100vh;
 	z-index: 999;
-	@extend %background-gradient;
 	transform: scale(0) translate(-100px, 100px);
 	visibility: hidden;
 	opacity: 0;
@@ -66,12 +67,12 @@
 	box-sizing: border-box;
 	flex-direction: column;
 	justify-content: space-between;
-	margin-top: 100px;
-	height: calc(100% - 96px);
+	padding-top: 100px;
+	height: 100vh;
 	overflow: hidden;
 
 	@media screen and (min-width: 370px) {
-		margin-top: 110px;
+		padding-top: 110px;
 	}
 
 	&__logo {
@@ -93,10 +94,10 @@
 		background-color: $dark-motive;
 		text-decoration: none;
 		z-index: 1;
+		font-weight: bold;
 
-		@include font-parameters(18px, 500);
-		@media screen and (min-width: 370px) {
-			font-size: 22px;
+		@media screen and (min-width: 375px) {
+			font-size: 18px;
 		}
 	}
 
@@ -109,7 +110,7 @@
 	&__mail {
 		color: $bright-color;
 		text-decoration: none;
-		padding-bottom: 40px;
+		padding-bottom: 20px;
 	}
 
 	&__social {
@@ -119,7 +120,7 @@
 		justify-content: space-around;
 		gap: 20px;
 		margin: 0px;
-		padding-top: 30px;
+		padding-top: 20px;
 		width: 100%;
 		list-style: none;
 
@@ -129,7 +130,7 @@
 			display: block;
 			width: 90%;
 			height: 2px;
-			background: linear-gradient(90deg, #007bff, #00d4ff);
+			background: linear-gradient(90deg, #007bff, #15b4d4);
 			top: 0;
 			left: calc(50% + 20px);
 			transform: translateX(-50%);
@@ -141,18 +142,28 @@
 	&__social-link {
 		color: $brand-color;
 		display: inline-block;
-		padding-bottom: 20px;
+		padding-bottom: 10px;
 	}
 
 	&__background-img {
 		position: absolute;
-		bottom: -10%;
-		right: -5%;
-		width: 80%;
+		top: 0;
+		left: 0;
+		width: 100%;
 		height: 100%;
-		background-image: url("../images/menu-mobile/network.png");
+		background-image: url("../images/test.webp");
 		background-size: cover;
-		opacity: 0.6;
+		z-index: -1;
+	}
+	&__background-img::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 0;
+		background-color: rgba(245, 244, 250, 0.668);
 	}
 }
 
@@ -168,26 +179,28 @@
 
 	@media screen and (min-width: 370px) {
 		font-size: 26px;
+		gap: 40px;
 	}
 
 	&__link {
 		text-decoration: none;
-		color: $dark-motive;
+		color: #212121;
 		font-weight: bold;
 		position: relative;
-		padding: 5px 0;
+		padding: 5px 10px;
+		border-radius: 5px;
+	}
 
-		&::after {
-			content: "";
-			display: block;
-			width: 100%;
-			height: 2px;
-			background: linear-gradient(90deg, #007bff, #00d4ff);
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			border-radius: 3px;
-			opacity: 0.7;
-		}
+	&__link::before {
+		content: "";
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: 4px;
+		background: linear-gradient(90deg, #007bff, #15b4d4);
+		bottom: -4px;
+		left: 0;
+		border-radius: 3px;
+		opacity: 0.7;
 	}
 }

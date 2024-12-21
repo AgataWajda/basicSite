@@ -15,7 +15,7 @@
 
 .member-box {
 	margin-bottom: 40px;
-	background-color: #fff;
+	background-color: #434451;
 	border-radius: 0px 0px 4px 4px;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
 		0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -63,15 +63,16 @@
 
 	&__name {
 		@include font-parameters(16px, 500);
-		text-align: center;
 		margin-bottom: 10px;
 		margin-top: 0px;
+		text-align: center;
+		color: #fff;
 	}
 
 	&__job {
 		text-align: center;
 		@include font-parameters(16px, 400);
-		color: $bright-color;
+		color: #afafaf;
 		margin-top: 0px;
 		margin-bottom: 0px;
 	}
@@ -88,8 +89,7 @@
 		@extend %social-media-icon;
 		color: #afb1b8;
 		padding: 12px;
-		@include transition(color);
-		@include transition(background-color);
+		transition: color 0.5s, background-color 0.5s;
 
 		&:not(:nth-of-type(4n)) {
 			margin-right: 10px;
@@ -107,5 +107,33 @@
 		@media screen and (min-width: $desktop) {
 			height: 270px;
 		}
+	}
+
+	&__img-box {
+		position: relative;
+	}
+
+	&__img-box::before,
+	&__img-box::after {
+		content: "";
+		position: absolute;
+		width: 30px;
+		height: 25px;
+		border-width: 2px;
+		transition: width 0.5s, height 0.5s;
+	}
+
+	&__img-box::before {
+		top: 0px;
+		right: 0px;
+		border-top: 3px solid $brand-color;
+		border-right: 3px solid $brand-color;
+	}
+
+	&__img-box:after {
+		bottom: 3px;
+		left: 0px;
+		border-bottom: 3px solid $brand-color;
+		border-left: 3px solid $brand-color;
 	}
 }

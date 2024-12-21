@@ -1,38 +1,54 @@
 @import "../utils/vars.scss";
 
 .company-offer {
- @media screen and (max-width: $desktop){
-  display: none ;
- }
- 
-  &__list {
-    padding-left: 0px;
-    margin: 0;
-  }
+	@media screen and (max-width: $desktop) {
+		display: none;
+	}
 
-  &__item {
-    display: inline-block;
-    position: relative;
-    box-sizing: border-box;
-    max-height: 294px;
+	&__list {
+		padding-left: 0px;
+		margin: 0;
+	}
 
-    @media screen and (min-width: $desktop) {
-      &:not(:last-of-type) {
-        margin-right: 30px;
-      }
-    }
-  }
+	&__item {
+		display: inline-block;
+		position: relative;
+		box-sizing: border-box;
+		max-height: 294px;
 
-  &__description {
-    position: absolute;
-    width: 100%;
-    margin: 0;
-    bottom: 0;
-    text-align: center;
-    padding-top: 27px;
-    padding-bottom: 27px;
-    color: #fff;
-    @include font-parameters(14px, 700);
-    background-color: rgba(47, 48, 58, 0.8);
-  }
+		& img {
+			border-top-right-radius: 5%;
+			border-bottom-left-radius: 5%;
+			transition: transform 0.3s;
+		}
+
+		@media screen and (min-width: $desktop) {
+			&:not(:last-of-type) {
+				margin-right: 30px;
+			}
+		}
+	}
+
+	&__item:hover img {
+		transform: scale(1.1);
+	}
+
+	&__item:hover .company-offer__description {
+		transform: scale(1.1) translateY(10px);
+	}
+
+	&__description {
+		position: absolute;
+		width: 100%;
+		margin: 0;
+		bottom: 0;
+		text-align: center;
+		padding-top: 27px;
+		padding-bottom: 27px;
+		color: #fff;
+		@include font-parameters(14px, 700);
+		background-color: rgba(47, 48, 58, 0.8);
+		border-bottom-left-radius: 15px;
+		transition: transform 0.3s;
+	}
 }
