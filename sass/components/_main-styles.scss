@@ -1,5 +1,9 @@
 @import "../utils/vars.scss";
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: Roboto, Raleway, sans-serif;
 	color: $body-color;
@@ -47,12 +51,35 @@ body {
 	fill: currentColor;
 }
 .button {
+	position: relative;
 	display: block;
 	margin: auto;
 	font-weight: 700;
 	font-size: 16px;
 	@extend %brand-button;
 	color: #fff;
+	overflow: hidden;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: -30px;
+		left: -130px;
+		height: 200%;
+		width: 100px;
+		background-image: linear-gradient(
+			-90deg,
+			rgba(255, 255, 255, 0),
+			rgba(255, 255, 255, 0.3),
+			rgba(255, 255, 255, 0)
+		);
+		transform: rotate(20deg);
+		transition: left 0.5s;
+	}
+}
+
+button:hover::before {
+	left: 130%;
 }
 
 .section-title {

@@ -138,11 +138,13 @@
 
 	&__submit {
 		@extend %brand-button;
+		position: relative;
 		margin-left: calc((100% - 200px) / 2);
 		display: inline-flex;
 		align-items: center;
 		justify-content: center;
 		gap: 5px;
+		overflow: hidden;
 
 		@media screen and (min-width: 366px) {
 			gap: 25px;
@@ -151,6 +153,28 @@
 		@media screen and (min-width: $desktop) {
 			margin-left: 0;
 		}
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: -30px;
+			left: -130px;
+			height: 300%;
+			width: 100px;
+			background-image: linear-gradient(
+				-90deg,
+				rgba(255, 255, 255, 0),
+				rgba(255, 255, 255, 0.3),
+				rgba(255, 255, 255, 0)
+			);
+
+			transform: rotate(20deg);
+			transition: left 0.4s;
+		}
+	}
+
+	&__submit:hover::before {
+		left: 130%;
 	}
 
 	&__sumbit-text {

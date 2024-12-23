@@ -1,8 +1,12 @@
 @import "../utils/vars.scss";
 
 .page-header {
+	position: sticky;
+	top: 0;
+	width: 100%;
 	background-color: $background-light;
 	border-bottom: 1px solid #ececec;
+	z-index: 9;
 
 	@media screen and (min-width: $desktop) {
 		height: 31px;
